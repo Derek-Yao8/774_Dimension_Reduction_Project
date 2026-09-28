@@ -1,0 +1,11 @@
+scope,metric,value
+embedding,trustworthiness,0.8114312065972222
+embedding,normalized_distance_error,0.39269117260954034
+embedding,scale_aligned_distance_error,0.3522550168455336
+embedding,distance_spearman,0.8096712258680918
+embedding,neighbor_overlap,0.13828125000000002
+view,trustworthiness,0.8114312065972222
+view,normalized_distance_error,0.39269117260954034
+view,scale_aligned_distance_error,0.3522550168455336
+view,distance_spearman,0.8096712258680918
+view,neighbor_overlap,0.13828125000000002

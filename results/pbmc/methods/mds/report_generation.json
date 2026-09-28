@@ -1,0 +1,8 @@
+{
+  "status": "evidence_report_complete",
+  "mode": "evidence_only",
+  "model_calls_attempted": 0,
+  "evidence_digest": "b85270a1810f5bbe4ace9fb2b0e2bc5eb7c75fdaa99655aab373889dd37ea671",
+  "validation_scope": "Structure, required sections, existing evidence IDs and input fingerprints; not semantic proof.",
+  "report": "generated_report_2.md"
+}

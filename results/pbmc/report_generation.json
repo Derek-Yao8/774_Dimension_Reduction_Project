@@ -1,0 +1,8 @@
+{
+  "status": "report_complete",
+  "model_calls_attempted": 1,
+  "evidence_digest": "b4f8c5adc47c432068e39a831b0f94e2470d668ea0dc578e8c44a1fda474ecea",
+  "visual_interpretation": "complete",
+  "image_count": 4,
+  "report": "generated_report_2.md"
+}

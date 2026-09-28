@@ -1,0 +1,30 @@
+{
+  "status": "preprocessing_complete",
+  "explanation": "Recommend total-count normalization and log1p for confirmed raw UMI counts, followed by constant-feature removal while preserving sparse storage and all cells.",
+  "plan": {
+    "reason": "User context confirms raw nonnegative integer UMI counts in cells-by-genes orientation. Normalize each cell to a total of 10000 to account for differing count totals, then apply log1p to compress the count range. Normalization must reject negative or noninteger values and zero-total rows; row totals are not established by this profile, so validate before transforming and do not silently drop cells. Remove constant features because 16104 are reported and they provide no variation across cells. Use automatic constant removal rather than explicit feature drops because feature details are truncated. Keep scaling disabled and do not center to preserve sparse storage. Retain error policies for missing, infinite, and all-missing values. Retain all cells and defer additional cell-quality filtering and variable-gene selection. No reduction executes here; the separately configured output dimension remains 2.",
+    "schema_version": "1.0",
+    "drop_features": [],
+    "infinity": "error",
+    "missing": "error",
+    "all_missing": "error",
+    "categorical": "error",
+    "remove_constants": true,
+    "count_data_confirmed": true,
+    "normalize_total": 10000,
+    "log1p": true,
+    "scale": "none",
+    "center": false,
+    "max_categories": 100,
+    "max_output_features": 100000,
+    "max_dense_bytes": 1000000000,
+    "ambiguity_resolutions": []
+  },
+  "output_shape": [
+    2700,
+    16634
+  ],
+  "reduction_executed": false,
+  "validation_history": [],
+  "backend": "codex_cli_chatgpt"
+}

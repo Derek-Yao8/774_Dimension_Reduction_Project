@@ -1,0 +1,236 @@
+{
+  "n_observations": 10004,
+  "n_features": 2352,
+  "storage": "dense",
+  "numeric_zero_fraction": 9.082251453160232e-05,
+  "constant_feature_count": 0,
+  "dimensions": 2,
+  "random_state": 0,
+  "array_sizes_bytes": {
+    "dense": 188235264,
+    "pairwise": 800640128
+  },
+  "eligibility": {
+    "pca": {
+      "eligible": true,
+      "reasons": []
+    },
+    "mds": {
+      "eligible": false,
+      "reasons": [
+        "Configured manifold observation limit is 5000; no automatic sampling.",
+        "Conservative dense/pairwise working-array screen exceeds configured working-byte limit."
+      ]
+    },
+    "isomap": {
+      "eligible": false,
+      "reasons": [
+        "Configured manifold observation limit is 5000; no automatic sampling.",
+        "Conservative dense/pairwise working-array screen exceeds configured working-byte limit."
+      ]
+    },
+    "lle": {
+      "eligible": false,
+      "reasons": [
+        "Configured manifold observation limit is 5000; no automatic sampling."
+      ]
+    },
+    "kernel_pca": {
+      "eligible": false,
+      "reasons": [
+        "Configured manifold observation limit is 5000; no automatic sampling.",
+        "Conservative new-method pairwise/workspace screen exceeds configured working-byte limit (even when the implementation can use sparse graphs)."
+      ]
+    },
+    "laplacian_eigenmaps": {
+      "eligible": false,
+      "reasons": [
+        "Configured manifold observation limit is 5000; no automatic sampling.",
+        "Conservative new-method pairwise/workspace screen exceeds configured working-byte limit (even when the implementation can use sparse graphs)."
+      ]
+    },
+    "diffusion_maps": {
+      "eligible": false,
+      "reasons": [
+        "Configured manifold observation limit is 5000; no automatic sampling.",
+        "Conservative new-method pairwise/workspace screen exceeds configured working-byte limit (even when the implementation can use sparse graphs)."
+      ]
+    },
+    "tsne": {
+      "eligible": false,
+      "reasons": [
+        "Configured manifold observation limit is 5000; no automatic sampling.",
+        "Conservative new-method pairwise/workspace screen exceeds configured working-byte limit (even when the implementation can use sparse graphs)."
+      ]
+    },
+    "umap": {
+      "eligible": false,
+      "reasons": [
+        "Configured manifold observation limit is 5000; no automatic sampling.",
+        "Conservative new-method pairwise/workspace screen exceeds configured working-byte limit (even when the implementation can use sparse graphs)."
+      ]
+    }
+  },
+  "available_methods": [
+    "pca",
+    "mds",
+    "isomap",
+    "lle",
+    "kernel_pca",
+    "laplacian_eigenmaps",
+    "diffusion_maps",
+    "tsne",
+    "umap"
+  ],
+  "resource_limits": {
+    "max_working_bytes": 1000000000,
+    "max_manifold_observations": 5000
+  },
+  "diagnostics": {
+    "schema_version": "1.0",
+    "status": "complete",
+    "input_shape": [
+      10004,
+      2352
+    ],
+    "config": {
+      "max_samples": 512,
+      "max_working_bytes": 128000000,
+      "seed": 0,
+      "neighbors": [
+        5,
+        15,
+        30
+      ]
+    },
+    "metric": "euclidean",
+    "limitations": [
+      "These diagnostics do not prove linearity, manifold structure or an optimal method.",
+      "A sampled graph does not establish full-data connectivity or the same best neighbor count.",
+      "Connectivity at large k can result from inappropriate bridges; it is not a quality score.",
+      "Duplicate and unusual-distance observations are measured, never automatically removed.",
+      "Feature variance is not a covariance spectrum or PCA explained variance.",
+      "Memory screening excludes loading the input and is not a hard process RAM cap."
+    ],
+    "sample_size": 512,
+    "sampled": true,
+    "estimated_working_bytes": 55462912,
+    "scope": "sample_only",
+    "sample_materialized_dense": true,
+    "duplicates": {
+      "extra_identical_rows": 0,
+      "groups_with_duplicates": 0,
+      "rows_in_duplicate_groups": 0,
+      "definition": "Exact equality of postprocessed sampled rows, not biological identity."
+    },
+    "feature_variance": {
+      "status": "complete",
+      "ddof": 0,
+      "distribution": {
+        "min": 856.9818725585938,
+        "q25": 967.4520883560181,
+        "median": 1005.0478496551514,
+        "q75": 1942.574803352356,
+        "max": 2223.764949798584
+      },
+      "zero_variance_features": 0,
+      "largest_feature_share": 0.0007177466651863244,
+      "top_five_feature_share": 0.0035683859346701454
+    },
+    "distances": {
+      "status": "complete",
+      "pair_count": 130816,
+      "distribution": {
+        "min": 36.0416425818802,
+        "q25": 1716.0673063364195,
+        "median": 2161.4812050998607,
+        "q75": 2765.312098117959,
+        "max": 7568.335616236902
+      },
+      "coefficient_of_variation": 0.38147630089145496,
+      "zero_distance_pair_fraction": 0.0,
+      "nearest_neighbor_distribution": {
+        "min": 36.0416425818802,
+        "q25": 821.8627514710944,
+        "median": 1082.7285005737804,
+        "q75": 1432.6479849573566,
+        "max": 2616.0774071116475
+      },
+      "median_nearest_to_median_pairwise_ratio": 0.5009196924864114
+    },
+    "neighborhoods": [
+      {
+        "k": 5,
+        "status": "complete",
+        "components": 1,
+        "largest_component_fraction": 1.0,
+        "smallest_component_size": 512,
+        "boundary_distance_distribution": {
+          "min": 272.0753572082558,
+          "q25": 900.4177460440497,
+          "median": 1143.600435241385,
+          "q75": 1509.025990531744,
+          "max": 2645.9741117403246
+        },
+        "rows_with_boundary_distance_ties": 0,
+        "graph": "undirected union kNN; self excluded; ties resolved by sampled row order"
+      },
+      {
+        "k": 15,
+        "status": "complete",
+        "components": 1,
+        "largest_component_fraction": 1.0,
+        "smallest_component_size": 512,
+        "boundary_distance_distribution": {
+          "min": 403.96039409823334,
+          "q25": 1004.4120803165622,
+          "median": 1242.4348182481135,
+          "q75": 1569.210279933708,
+          "max": 2697.4078297506294
+        },
+        "rows_with_boundary_distance_ties": 0,
+        "graph": "undirected union kNN; self excluded; ties resolved by sampled row order"
+      },
+      {
+        "k": 30,
+        "status": "complete",
+        "components": 1,
+        "largest_component_fraction": 1.0,
+        "smallest_component_size": 512,
+        "boundary_distance_distribution": {
+          "min": 825.5137794125546,
+          "q25": 1162.0044339253056,
+          "median": 1341.676917764004,
+          "q75": 1647.3279138741657,
+          "max": 2730.6863606060656
+        },
+        "rows_with_boundary_distance_ties": 0,
+        "graph": "undirected union kNN; self excluded; ties resolved by sampled row order"
+      }
+    ]
+  },
+  "preprocessing": {
+    "reason": "Keep the original RGB intensities without scaling or centering to preserve their common 0\u2013255 units and relative variation. The user confirms these are not counts, so count normalization and log1p are unnecessary. No missing, infinite, all-missing, or constant features are reported, so retain error policies and omit imputation, feature drops, and constant removal. All features are numeric; labels remain metadata. Retain all 10,004 observations without a new split. Output dimensionality is configured separately; this plan performs no dimensionality reduction. All resource limits remain at their defaults.",
+    "schema_version": "1.0",
+    "drop_features": [],
+    "infinity": "error",
+    "missing": "error",
+    "all_missing": "error",
+    "categorical": "error",
+    "remove_constants": false,
+    "count_data_confirmed": false,
+    "normalize_total": null,
+    "log1p": false,
+    "scale": "none",
+    "center": false,
+    "max_categories": 100,
+    "max_output_features": 100000,
+    "max_dense_bytes": 1000000000,
+    "ambiguity_resolutions": []
+  },
+  "limitations": [
+    "No covariance spectrum or intrinsic dimension has been measured. Check diagnostic status/scope before claiming geometry evidence.",
+    "Eligibility is not proof of sufficient memory, speed or scientific suitability.",
+    "No label values, label counts, source paths or raw observations are sent by this stage."
+  ]
+}

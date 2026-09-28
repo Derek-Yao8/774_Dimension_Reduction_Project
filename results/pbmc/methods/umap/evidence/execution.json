@@ -1,0 +1,208 @@
+{
+  "status": "execution_complete",
+  "original_plan": {
+    "method": "umap",
+    "n_components": 2,
+    "parameters": {
+      "n_neighbors": 15,
+      "min_dist": 0.1,
+      "n_epochs": 200,
+      "learning_rate": 1.0
+    },
+    "reason": "Execute all four suitable eligible methods sequentially: PCA, MDS, t-SNE and UMAP, without ranking. Preserve preprocessing, all cells, absent labels, resource limits, fixed two-dimensional output and seed 0. Scientific assessments use only the recorded 231-observation sample: distance CV is 0.0541 and the median nearest-to-pairwise distance ratio is 0.8959. Sample union graphs are connected at k=5,15,30, but this establishes neither meaningful neighborhoods nor full-data connectivity. These observations warrant caution rather than a claim that full-data manifold structure is absent.",
+    "scientific_reason": "UMAP is suitable as an exploratory Euclidean-neighborhood visualization with explicit caution about uncertain local contrast. Selection does not endorse a biological manifold or quantitative interpretation of the layout.",
+    "feasibility_reason": "Recorded eligibility is true. Use Euclidean input, random initialization, seed 0 and single-thread optimization, without preliminary PCA or spectral initialization.",
+    "limitations": [
+      "Fifteen neighbors is a valid conventional local scale, not a full-data optimum inferred from the connected sampled graph; min_dist=0.1 permits compact visual neighborhoods.",
+      "Two hundred epochs and learning_rate=1.0 are conventional optimization settings, not empirically tuned values.",
+      "Full-data connectivity is unknown; disconnected-component placement, apparent clusters and global distances require caution.",
+      "Low global Euclidean distortion is not the objective, and visual groups do not establish biological identities."
+    ],
+    "alternatives": {
+      "pca": {
+        "scientific_reason": "Centered PCA provides a defensible linear variance summary of the fixed transformed features without assuming a manifold. No covariance spectrum is available, so adequacy of two components is unknown.",
+        "feasibility_reason": "Recorded eligibility is true. Use the sparse-compatible centered estimator with arpack; do not manually densify or substitute uncentered TruncatedSVD."
+      },
+      "mds": {
+        "scientific_reason": "Metric Euclidean MDS directly evaluates a distance-preserving representation of the fixed input. It is a useful global-distance objective even though concentrated sampled distances suggest that a faithful two-dimensional representation may be difficult.",
+        "feasibility_reason": "Recorded eligibility is true: 2700 observations are below the 5000 limit and one pairwise array is 58320000 bytes. Quadratic storage and iterative work remain material within the recorded screening."
+      },
+      "isomap": {
+        "scientific_reason": "Geodesic interpretation needs meaningful local Euclidean neighborhoods. Weak sampled neighbor contrast and sample-only connectivity provide insufficient support for treating graph paths as intrinsic distances in this analysis.",
+        "feasibility_reason": "Recorded eligibility is true, but computational eligibility does not resolve the scientific neighborhood concern or establish full-data connectivity."
+      },
+      "lle": {
+        "scientific_reason": "Standard LLE relies on stable local reconstruction weights. The recorded sample provides no local conditioning or reconstruction evidence, while weak neighbor contrast makes this assumption insufficiently supported.",
+        "feasibility_reason": "Recorded eligibility is false: sparse LLE is outside the execution contract and implicit densification is prohibited. This exclusion is independent of the scientific assessment."
+      },
+      "kernel_pca": {
+        "scientific_reason": "RBF Kernel PCA would introduce a bandwidth-defined nonlinear geometry without a specific supported nonlinear feature objective here. Concentrated sampled distances give limited justification for replacing the directly interpretable variance and Euclidean-distance objectives with this kernel geometry.",
+        "feasibility_reason": "Recorded eligibility is true; quadratic kernel storage passes the recorded screen. Exclusion is scientific, not a claimed resource failure."
+      },
+      "laplacian_eigenmaps": {
+        "scientific_reason": "A binary graph spectral representation depends strongly on meaningful neighborhood membership. Weak sampled distance contrast and connectivity alone do not sufficiently support that graph as the scientific geometry.",
+        "feasibility_reason": "Recorded eligibility is true, but the required connected full-data union binary graph has not been established by sample-only diagnostics."
+      },
+      "diffusion_maps": {
+        "scientific_reason": "Interpreting Gaussian-kernel transport requires a defensible affinity scale and treatment of sampling density. The recorded distance concentration and absence of a supported diffusion objective leave that interpretation insufficiently grounded for selection.",
+        "feasibility_reason": "Recorded eligibility is true and dense quadratic affinity storage passes the recorded screening. No computational ineligibility is inferred."
+      },
+      "tsne": {
+        "scientific_reason": "t-SNE is suitable for exploratory visualization of local similarities without claiming a global metric or intrinsic manifold. Weak sampled neighbor contrast requires restrained interpretation, but does not by itself invalidate this visualization objective.",
+        "feasibility_reason": "Recorded eligibility is true and two dimensions satisfy the Barnes-Hut requirement of one to three dimensions. Use random initialization and no preliminary PCA."
+      }
+    }
+  },
+  "attempts": [
+    {
+      "plan": {
+        "method": "umap",
+        "n_components": 2,
+        "parameters": {
+          "n_neighbors": 15,
+          "min_dist": 0.1,
+          "n_epochs": 200,
+          "learning_rate": 1.0
+        },
+        "reason": "Execute all four suitable eligible methods sequentially: PCA, MDS, t-SNE and UMAP, without ranking. Preserve preprocessing, all cells, absent labels, resource limits, fixed two-dimensional output and seed 0. Scientific assessments use only the recorded 231-observation sample: distance CV is 0.0541 and the median nearest-to-pairwise distance ratio is 0.8959. Sample union graphs are connected at k=5,15,30, but this establishes neither meaningful neighborhoods nor full-data connectivity. These observations warrant caution rather than a claim that full-data manifold structure is absent.",
+        "scientific_reason": "UMAP is suitable as an exploratory Euclidean-neighborhood visualization with explicit caution about uncertain local contrast. Selection does not endorse a biological manifold or quantitative interpretation of the layout.",
+        "feasibility_reason": "Recorded eligibility is true. Use Euclidean input, random initialization, seed 0 and single-thread optimization, without preliminary PCA or spectral initialization.",
+        "limitations": [
+          "Fifteen neighbors is a valid conventional local scale, not a full-data optimum inferred from the connected sampled graph; min_dist=0.1 permits compact visual neighborhoods.",
+          "Two hundred epochs and learning_rate=1.0 are conventional optimization settings, not empirically tuned values.",
+          "Full-data connectivity is unknown; disconnected-component placement, apparent clusters and global distances require caution.",
+          "Low global Euclidean distortion is not the objective, and visual groups do not establish biological identities."
+        ],
+        "alternatives": {
+          "pca": {
+            "scientific_reason": "Centered PCA provides a defensible linear variance summary of the fixed transformed features without assuming a manifold. No covariance spectrum is available, so adequacy of two components is unknown.",
+            "feasibility_reason": "Recorded eligibility is true. Use the sparse-compatible centered estimator with arpack; do not manually densify or substitute uncentered TruncatedSVD."
+          },
+          "mds": {
+            "scientific_reason": "Metric Euclidean MDS directly evaluates a distance-preserving representation of the fixed input. It is a useful global-distance objective even though concentrated sampled distances suggest that a faithful two-dimensional representation may be difficult.",
+            "feasibility_reason": "Recorded eligibility is true: 2700 observations are below the 5000 limit and one pairwise array is 58320000 bytes. Quadratic storage and iterative work remain material within the recorded screening."
+          },
+          "isomap": {
+            "scientific_reason": "Geodesic interpretation needs meaningful local Euclidean neighborhoods. Weak sampled neighbor contrast and sample-only connectivity provide insufficient support for treating graph paths as intrinsic distances in this analysis.",
+            "feasibility_reason": "Recorded eligibility is true, but computational eligibility does not resolve the scientific neighborhood concern or establish full-data connectivity."
+          },
+          "lle": {
+            "scientific_reason": "Standard LLE relies on stable local reconstruction weights. The recorded sample provides no local conditioning or reconstruction evidence, while weak neighbor contrast makes this assumption insufficiently supported.",
+            "feasibility_reason": "Recorded eligibility is false: sparse LLE is outside the execution contract and implicit densification is prohibited. This exclusion is independent of the scientific assessment."
+          },
+          "kernel_pca": {
+            "scientific_reason": "RBF Kernel PCA would introduce a bandwidth-defined nonlinear geometry without a specific supported nonlinear feature objective here. Concentrated sampled distances give limited justification for replacing the directly interpretable variance and Euclidean-distance objectives with this kernel geometry.",
+            "feasibility_reason": "Recorded eligibility is true; quadratic kernel storage passes the recorded screen. Exclusion is scientific, not a claimed resource failure."
+          },
+          "laplacian_eigenmaps": {
+            "scientific_reason": "A binary graph spectral representation depends strongly on meaningful neighborhood membership. Weak sampled distance contrast and connectivity alone do not sufficiently support that graph as the scientific geometry.",
+            "feasibility_reason": "Recorded eligibility is true, but the required connected full-data union binary graph has not been established by sample-only diagnostics."
+          },
+          "diffusion_maps": {
+            "scientific_reason": "Interpreting Gaussian-kernel transport requires a defensible affinity scale and treatment of sampling density. The recorded distance concentration and absence of a supported diffusion objective leave that interpretation insufficiently grounded for selection.",
+            "feasibility_reason": "Recorded eligibility is true and dense quadratic affinity storage passes the recorded screening. No computational ineligibility is inferred."
+          },
+          "tsne": {
+            "scientific_reason": "t-SNE is suitable for exploratory visualization of local similarities without claiming a global metric or intrinsic manifold. Weak sampled neighbor contrast requires restrained interpretation, but does not by itself invalidate this visualization objective.",
+            "feasibility_reason": "Recorded eligibility is true and two dimensions satisfy the Barnes-Hut requirement of one to three dimensions. Use random initialization and no preliminary PCA."
+          }
+        }
+      },
+      "status": "complete",
+      "metrics": {
+        "graph_components": 1,
+        "graph_edges_directed": 74298,
+        "disconnected_layout_caution": false
+      },
+      "effective_parameters": {
+        "a": null,
+        "angular_rp_forest": false,
+        "b": null,
+        "dens_frac": 0.3,
+        "dens_lambda": 2.0,
+        "dens_var_shift": 0.1,
+        "densmap": false,
+        "disconnection_distance": null,
+        "force_approximation_algorithm": false,
+        "init": "random",
+        "learning_rate": 1.0,
+        "local_connectivity": 1.0,
+        "low_memory": true,
+        "metric": "euclidean",
+        "metric_kwds": null,
+        "min_dist": 0.1,
+        "n_components": 2,
+        "n_epochs": 200,
+        "n_jobs": 1,
+        "n_neighbors": 15,
+        "negative_sample_rate": 5,
+        "output_dens": false,
+        "output_metric": "euclidean",
+        "output_metric_kwds": null,
+        "precomputed_knn": [
+          null,
+          null,
+          null
+        ],
+        "random_state": 0,
+        "repulsion_strength": 1.0,
+        "set_op_mix_ratio": 1.0,
+        "spread": 1.0,
+        "target_metric": "categorical",
+        "target_metric_kwds": null,
+        "target_n_neighbors": -1,
+        "target_weight": 0.5,
+        "tqdm_kwds": {
+          "desc": "Epochs completed",
+          "bar_format": "{desc}: {percentage:3.0f}%| {bar} {n_fmt}/{total_fmt} [{elapsed}]",
+          "disable": true
+        },
+        "transform_mode": "embedding",
+        "transform_queue_size": 4.0,
+        "transform_seed": 0,
+        "unique": false,
+        "verbose": false
+      },
+      "dependency_versions": {
+        "umap-learn": "0.5.12",
+        "numba": "0.67.0",
+        "pynndescent": "0.6.0",
+        "llvmlite": "0.49.0"
+      },
+      "warnings": [
+        "Tensorflow not installed; ParametricUMAP will be unavailable"
+      ],
+      "elapsed_seconds": 10.987958249999792
+    }
+  ],
+  "fallback_occurred": false,
+  "fallback_planner_calls": 0,
+  "final_method": "umap",
+  "input_sha256": "e967fae1a2e14f4118f43306db39335025798eecc4cd199c4a57c741f4e0696e",
+  "selection_sha256": "ead8fe827df00a3881b4837a76cb14c0c8acb608b482ae01245a2c1b2a533897",
+  "timeout_seconds_per_attempt": 600,
+  "threads": 2,
+  "seed": 0,
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pandas": "2.3.3",
+    "umap-learn": "0.5.12",
+    "numba": "0.67.0",
+    "pynndescent": "0.6.0",
+    "llvmlite": "0.49.0"
+  },
+  "python": "3.13.2",
+  "allow_fallback": true,
+  "notices": [
+    "EXECUTION SUCCEEDED: umap {\"n_neighbors\": 15, \"min_dist\": 0.1, \"n_epochs\": 200, \"learning_rate\": 1.0}"
+  ],
+  "dimension_mode": "fixed",
+  "output_shape": [
+    2700,
+    2
+  ],
+  "selected_dimensions": 2,
+  "embedding_sha256": "214d6ff17ba5c73f04c271940dd7ce228785b3615270054cebd0cb9c9d877e7d"
+}

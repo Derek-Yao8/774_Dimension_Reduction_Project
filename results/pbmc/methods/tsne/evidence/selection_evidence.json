@@ -1,0 +1,215 @@
+{
+  "n_observations": 2700,
+  "n_features": 16634,
+  "storage": "sparse_csr",
+  "numeric_zero_fraction": 0.9490805534402985,
+  "constant_feature_count": 0,
+  "dimensions": 2,
+  "random_state": 0,
+  "array_sizes_bytes": {
+    "dense": 359294400,
+    "pairwise": 58320000
+  },
+  "eligibility": {
+    "pca": {
+      "eligible": true,
+      "reasons": []
+    },
+    "mds": {
+      "eligible": true,
+      "reasons": []
+    },
+    "isomap": {
+      "eligible": true,
+      "reasons": []
+    },
+    "lle": {
+      "eligible": false,
+      "reasons": [
+        "Sparse LLE is outside the current execution contract; no implicit densification."
+      ]
+    },
+    "kernel_pca": {
+      "eligible": true,
+      "reasons": []
+    },
+    "laplacian_eigenmaps": {
+      "eligible": true,
+      "reasons": []
+    },
+    "diffusion_maps": {
+      "eligible": true,
+      "reasons": []
+    },
+    "tsne": {
+      "eligible": true,
+      "reasons": []
+    },
+    "umap": {
+      "eligible": true,
+      "reasons": []
+    }
+  },
+  "available_methods": [
+    "pca",
+    "mds",
+    "isomap",
+    "lle",
+    "kernel_pca",
+    "laplacian_eigenmaps",
+    "diffusion_maps",
+    "tsne",
+    "umap"
+  ],
+  "resource_limits": {
+    "max_working_bytes": 1000000000,
+    "max_manifold_observations": 5000
+  },
+  "diagnostics": {
+    "schema_version": "1.0",
+    "status": "complete",
+    "input_shape": [
+      2700,
+      16634
+    ],
+    "config": {
+      "max_samples": 512,
+      "max_working_bytes": 128000000,
+      "seed": 0,
+      "neighbors": [
+        5,
+        15,
+        30
+      ]
+    },
+    "metric": "euclidean",
+    "limitations": [
+      "These diagnostics do not prove linearity, manifold structure or an optimal method.",
+      "A sampled graph does not establish full-data connectivity or the same best neighbor count.",
+      "Connectivity at large k can result from inappropriate bridges; it is not a quality score.",
+      "Duplicate and unusual-distance observations are measured, never automatically removed.",
+      "Feature variance is not a covariance spectrum or PCA explained variance.",
+      "Memory screening excludes loading the input and is not a hard process RAM cap."
+    ],
+    "sample_size": 231,
+    "sampled": true,
+    "estimated_working_bytes": 127438208,
+    "scope": "sample_only",
+    "sample_materialized_dense": true,
+    "duplicates": {
+      "extra_identical_rows": 0,
+      "groups_with_duplicates": 0,
+      "rows_in_duplicate_groups": 0,
+      "definition": "Exact equality of postprocessed sampled rows, not biological identity."
+    },
+    "feature_variance": {
+      "status": "complete",
+      "ddof": 0,
+      "distribution": {
+        "min": 0.0,
+        "q25": 0.0,
+        "median": 0.03198492934446307,
+        "q75": 0.12312827043084347,
+        "max": 3.9245061403734764
+      },
+      "zero_variance_features": 4818,
+      "largest_feature_share": 0.0020068261467666238,
+      "top_five_feature_share": 0.008396729315873886
+    },
+    "distances": {
+      "status": "complete",
+      "pair_count": 26565,
+      "distribution": {
+        "min": 50.86293738611097,
+        "q25": 60.249630644637406,
+        "median": 62.70432429773416,
+        "q75": 64.95551743966129,
+        "max": 75.16281533771316
+      },
+      "coefficient_of_variation": 0.05405064587247849,
+      "zero_distance_pair_fraction": 0.0,
+      "nearest_neighbor_distribution": {
+        "min": 50.86293738611097,
+        "q25": 54.32920189385585,
+        "median": 56.17571799192354,
+        "q75": 57.939851896232085,
+        "max": 65.31047102366477
+      },
+      "median_nearest_to_median_pairwise_ratio": 0.8958826782852912
+    },
+    "neighborhoods": [
+      {
+        "k": 5,
+        "status": "complete",
+        "components": 1,
+        "largest_component_fraction": 1.0,
+        "smallest_component_size": 231,
+        "boundary_distance_distribution": {
+          "min": 52.030339990795504,
+          "q25": 55.79956027987663,
+          "median": 57.23728953058541,
+          "q75": 59.061043850537224,
+          "max": 66.08070848870956
+        },
+        "rows_with_boundary_distance_ties": 0,
+        "graph": "undirected union kNN; self excluded; ties resolved by sampled row order"
+      },
+      {
+        "k": 15,
+        "status": "complete",
+        "components": 1,
+        "largest_component_fraction": 1.0,
+        "smallest_component_size": 231,
+        "boundary_distance_distribution": {
+          "min": 53.23010938326062,
+          "q25": 56.84825901174882,
+          "median": 58.35344406530067,
+          "q75": 59.97375162500076,
+          "max": 67.0271113913483
+        },
+        "rows_with_boundary_distance_ties": 0,
+        "graph": "undirected union kNN; self excluded; ties resolved by sampled row order"
+      },
+      {
+        "k": 30,
+        "status": "complete",
+        "components": 1,
+        "largest_component_fraction": 1.0,
+        "smallest_component_size": 231,
+        "boundary_distance_distribution": {
+          "min": 53.888709048616924,
+          "q25": 57.706144771146086,
+          "median": 59.308661811760906,
+          "q75": 60.723045326234406,
+          "max": 67.48219017528974
+        },
+        "rows_with_boundary_distance_ties": 0,
+        "graph": "undirected union kNN; self excluded; ties resolved by sampled row order"
+      }
+    ]
+  },
+  "preprocessing": {
+    "reason": "User context confirms raw nonnegative integer UMI counts in cells-by-genes orientation. Normalize each cell to a total of 10000 to account for differing count totals, then apply log1p to compress the count range. Normalization must reject negative or noninteger values and zero-total rows; row totals are not established by this profile, so validate before transforming and do not silently drop cells. Remove constant features because 16104 are reported and they provide no variation across cells. Use automatic constant removal rather than explicit feature drops because feature details are truncated. Keep scaling disabled and do not center to preserve sparse storage. Retain error policies for missing, infinite, and all-missing values. Retain all cells and defer additional cell-quality filtering and variable-gene selection. No reduction executes here; the separately configured output dimension remains 2.",
+    "schema_version": "1.0",
+    "drop_features": [],
+    "infinity": "error",
+    "missing": "error",
+    "all_missing": "error",
+    "categorical": "error",
+    "remove_constants": true,
+    "count_data_confirmed": true,
+    "normalize_total": 10000,
+    "log1p": true,
+    "scale": "none",
+    "center": false,
+    "max_categories": 100,
+    "max_output_features": 100000,
+    "max_dense_bytes": 1000000000,
+    "ambiguity_resolutions": []
+  },
+  "limitations": [
+    "No covariance spectrum or intrinsic dimension has been measured. Check diagnostic status/scope before claiming geometry evidence.",
+    "Eligibility is not proof of sufficient memory, speed or scientific suitability.",
+    "No label values, label counts, source paths or raw observations are sent by this stage."
+  ]
+}

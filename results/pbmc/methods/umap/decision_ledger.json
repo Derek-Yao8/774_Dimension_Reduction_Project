@@ -1,0 +1,1166 @@
+[
+  {
+    "choice": "preprocessing.drop_features",
+    "value": [],
+    "authority": "Saved preprocessing planner proposal",
+    "evidence_refs": [
+      "preprocessing.plan",
+      "input_profile"
+    ],
+    "support": "See the verbatim aggregate preprocessing rationale. A separate field-level reason/evidence mapping was not recorded; support for this individual value is not independently verified."
+  },
+  {
+    "choice": "preprocessing.infinity",
+    "value": "error",
+    "authority": "Saved preprocessing planner proposal",
+    "evidence_refs": [
+      "preprocessing.plan",
+      "input_profile"
+    ],
+    "support": "See the verbatim aggregate preprocessing rationale. A separate field-level reason/evidence mapping was not recorded; support for this individual value is not independently verified."
+  },
+  {
+    "choice": "preprocessing.missing",
+    "value": "error",
+    "authority": "Saved preprocessing planner proposal",
+    "evidence_refs": [
+      "preprocessing.plan",
+      "input_profile"
+    ],
+    "support": "See the verbatim aggregate preprocessing rationale. A separate field-level reason/evidence mapping was not recorded; support for this individual value is not independently verified."
+  },
+  {
+    "choice": "preprocessing.all_missing",
+    "value": "error",
+    "authority": "Saved preprocessing planner proposal",
+    "evidence_refs": [
+      "preprocessing.plan",
+      "input_profile"
+    ],
+    "support": "See the verbatim aggregate preprocessing rationale. A separate field-level reason/evidence mapping was not recorded; support for this individual value is not independently verified."
+  },
+  {
+    "choice": "preprocessing.categorical",
+    "value": "error",
+    "authority": "Saved preprocessing planner proposal",
+    "evidence_refs": [
+      "preprocessing.plan",
+      "input_profile"
+    ],
+    "support": "See the verbatim aggregate preprocessing rationale. A separate field-level reason/evidence mapping was not recorded; support for this individual value is not independently verified."
+  },
+  {
+    "choice": "preprocessing.remove_constants",
+    "value": true,
+    "authority": "Saved preprocessing planner proposal",
+    "evidence_refs": [
+      "preprocessing.plan",
+      "input_profile"
+    ],
+    "support": "See the verbatim aggregate preprocessing rationale. A separate field-level reason/evidence mapping was not recorded; support for this individual value is not independently verified."
+  },
+  {
+    "choice": "preprocessing.count_data_confirmed",
+    "value": true,
+    "authority": "Saved preprocessing planner proposal",
+    "evidence_refs": [
+      "preprocessing.plan",
+      "input_profile"
+    ],
+    "support": "See the verbatim aggregate preprocessing rationale. A separate field-level reason/evidence mapping was not recorded; support for this individual value is not independently verified."
+  },
+  {
+    "choice": "preprocessing.normalize_total",
+    "value": 10000,
+    "authority": "Saved preprocessing planner proposal",
+    "evidence_refs": [
+      "preprocessing.plan",
+      "input_profile"
+    ],
+    "support": "See the verbatim aggregate preprocessing rationale. A separate field-level reason/evidence mapping was not recorded; support for this individual value is not independently verified."
+  },
+  {
+    "choice": "preprocessing.log1p",
+    "value": true,
+    "authority": "Saved preprocessing planner proposal",
+    "evidence_refs": [
+      "preprocessing.plan",
+      "input_profile"
+    ],
+    "support": "See the verbatim aggregate preprocessing rationale. A separate field-level reason/evidence mapping was not recorded; support for this individual value is not independently verified."
+  },
+  {
+    "choice": "preprocessing.scale",
+    "value": "none",
+    "authority": "Saved preprocessing planner proposal",
+    "evidence_refs": [
+      "preprocessing.plan",
+      "input_profile"
+    ],
+    "support": "See the verbatim aggregate preprocessing rationale. A separate field-level reason/evidence mapping was not recorded; support for this individual value is not independently verified."
+  },
+  {
+    "choice": "preprocessing.center",
+    "value": false,
+    "authority": "Saved preprocessing planner proposal",
+    "evidence_refs": [
+      "preprocessing.plan",
+      "input_profile"
+    ],
+    "support": "See the verbatim aggregate preprocessing rationale. A separate field-level reason/evidence mapping was not recorded; support for this individual value is not independently verified."
+  },
+  {
+    "choice": "preprocessing.max_categories",
+    "value": 100,
+    "authority": "Application-enforced resource setting",
+    "evidence_refs": [
+      "preprocessing.plan",
+      "input_profile"
+    ],
+    "support": "Planner was prohibited from changing this resource setting; its numeric value is an implementation policy, not a measured optimum."
+  },
+  {
+    "choice": "preprocessing.max_output_features",
+    "value": 100000,
+    "authority": "Application-enforced resource setting",
+    "evidence_refs": [
+      "preprocessing.plan",
+      "input_profile"
+    ],
+    "support": "Planner was prohibited from changing this resource setting; its numeric value is an implementation policy, not a measured optimum."
+  },
+  {
+    "choice": "preprocessing.max_dense_bytes",
+    "value": 1000000000,
+    "authority": "Application-enforced resource setting",
+    "evidence_refs": [
+      "preprocessing.plan",
+      "input_profile"
+    ],
+    "support": "Planner was prohibited from changing this resource setting; its numeric value is an implementation policy, not a measured optimum."
+  },
+  {
+    "choice": "preprocessing.ambiguity_resolutions",
+    "value": [],
+    "authority": "Saved preprocessing planner proposal",
+    "evidence_refs": [
+      "preprocessing.plan",
+      "input_profile"
+    ],
+    "support": "See the verbatim aggregate preprocessing rationale. A separate field-level reason/evidence mapping was not recorded; support for this individual value is not independently verified."
+  },
+  {
+    "choice": "selection.method",
+    "value": "umap",
+    "authority": "Saved method planner proposal within Python eligibility constraints",
+    "evidence_refs": [
+      "selection.plan",
+      "selection.feasibility_checks",
+      "selection.resource_limits"
+    ],
+    "support": "See verbatim scientific and feasibility reasons. No comparative optimization establishes this value as best."
+  },
+  {
+    "choice": "selection.n_components",
+    "value": 2,
+    "authority": "application default (recorded by workflow coordinator)",
+    "evidence_refs": [
+      "selection.plan",
+      "selection.feasibility_checks",
+      "selection.resource_limits",
+      "workflow_config.origins"
+    ],
+    "support": "Exact value and caller/default provenance were saved before planning. This does not establish scientific optimality."
+  },
+  {
+    "choice": "selection.n_neighbors",
+    "value": 15,
+    "authority": "Saved method planner proposal within Python eligibility constraints",
+    "evidence_refs": [
+      "selection.plan",
+      "selection.feasibility_checks",
+      "selection.resource_limits"
+    ],
+    "support": "See verbatim scientific and feasibility reasons. No comparative optimization establishes this value as best."
+  },
+  {
+    "choice": "selection.min_dist",
+    "value": 0.1,
+    "authority": "Saved method planner proposal within Python eligibility constraints",
+    "evidence_refs": [
+      "selection.plan",
+      "selection.feasibility_checks",
+      "selection.resource_limits"
+    ],
+    "support": "See verbatim scientific and feasibility reasons. No comparative optimization establishes this value as best."
+  },
+  {
+    "choice": "selection.n_epochs",
+    "value": 200,
+    "authority": "Saved method planner proposal within Python eligibility constraints",
+    "evidence_refs": [
+      "selection.plan",
+      "selection.feasibility_checks",
+      "selection.resource_limits"
+    ],
+    "support": "See verbatim scientific and feasibility reasons. No comparative optimization establishes this value as best."
+  },
+  {
+    "choice": "selection.learning_rate",
+    "value": 1.0,
+    "authority": "Saved method planner proposal within Python eligibility constraints",
+    "evidence_refs": [
+      "selection.plan",
+      "selection.feasibility_checks",
+      "selection.resource_limits"
+    ],
+    "support": "See verbatim scientific and feasibility reasons. No comparative optimization establishes this value as best."
+  },
+  {
+    "choice": "execution.attempt_1.a",
+    "value": null,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.angular_rp_forest",
+    "value": false,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.b",
+    "value": null,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.dens_frac",
+    "value": 0.3,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.dens_lambda",
+    "value": 2.0,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.dens_var_shift",
+    "value": 0.1,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.densmap",
+    "value": false,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.disconnection_distance",
+    "value": null,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.force_approximation_algorithm",
+    "value": false,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.init",
+    "value": "random",
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.learning_rate",
+    "value": 1.0,
+    "authority": "Copied from saved method plan",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.local_connectivity",
+    "value": 1.0,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.low_memory",
+    "value": true,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.metric",
+    "value": "euclidean",
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.metric_kwds",
+    "value": null,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.min_dist",
+    "value": 0.1,
+    "authority": "Copied from saved method plan",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.n_components",
+    "value": 2,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.n_epochs",
+    "value": 200,
+    "authority": "Copied from saved method plan",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.n_jobs",
+    "value": 1,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.n_neighbors",
+    "value": 15,
+    "authority": "Copied from saved method plan",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.negative_sample_rate",
+    "value": 5,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.output_dens",
+    "value": false,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.output_metric",
+    "value": "euclidean",
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.output_metric_kwds",
+    "value": null,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.precomputed_knn",
+    "value": [
+      null,
+      null,
+      null
+    ],
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.random_state",
+    "value": 0,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.repulsion_strength",
+    "value": 1.0,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.set_op_mix_ratio",
+    "value": 1.0,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.spread",
+    "value": 1.0,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.target_metric",
+    "value": "categorical",
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.target_metric_kwds",
+    "value": null,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.target_n_neighbors",
+    "value": -1,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.target_weight",
+    "value": 0.5,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.tqdm_kwds",
+    "value": {
+      "desc": "Epochs completed",
+      "bar_format": "{desc}: {percentage:3.0f}%| {bar} {n_fmt}/{total_fmt} [{elapsed}]",
+      "disable": true
+    },
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.transform_mode",
+    "value": "embedding",
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.transform_queue_size",
+    "value": 4.0,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.transform_seed",
+    "value": 0,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.unique",
+    "value": false,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "execution.attempt_1.verbose",
+    "value": false,
+    "authority": "Executor or library setting; not a separately recorded Codex decision",
+    "evidence_refs": [
+      "execution.attempts"
+    ],
+    "support": "Effective value is recorded by the fitted estimator. For parameters outside the plan, no individual scientific tuning justification was recorded."
+  },
+  {
+    "choice": "selection.max_working_bytes",
+    "value": 1000000000,
+    "authority": "application default (recorded by workflow coordinator)",
+    "evidence_refs": [
+      "selection.resource_limits",
+      "workflow_config.origins"
+    ],
+    "support": "Exact value and caller/default provenance were saved before planning. This does not establish scientific optimality."
+  },
+  {
+    "choice": "selection.max_manifold_observations",
+    "value": 5000,
+    "authority": "application default (recorded by workflow coordinator)",
+    "evidence_refs": [
+      "selection.resource_limits",
+      "workflow_config.origins"
+    ],
+    "support": "Exact value and caller/default provenance were saved before planning. This does not establish scientific optimality."
+  },
+  {
+    "choice": "evaluation.max_samples",
+    "value": 512,
+    "authority": "application default (recorded by workflow coordinator)",
+    "evidence_refs": [
+      "evaluation.config",
+      "workflow_config.origins"
+    ],
+    "support": "Exact value and caller/default provenance were saved before planning. This does not establish scientific optimality."
+  },
+  {
+    "choice": "evaluation.max_working_bytes",
+    "value": 128000000,
+    "authority": "application default (recorded by workflow coordinator)",
+    "evidence_refs": [
+      "evaluation.config",
+      "workflow_config.origins"
+    ],
+    "support": "Exact value and caller/default provenance were saved before planning. This does not establish scientific optimality."
+  },
+  {
+    "choice": "evaluation.neighbors",
+    "value": 5,
+    "authority": "application default (recorded by workflow coordinator)",
+    "evidence_refs": [
+      "evaluation.config",
+      "workflow_config.origins"
+    ],
+    "support": "Exact value and caller/default provenance were saved before planning. This does not establish scientific optimality."
+  },
+  {
+    "choice": "evaluation.seed",
+    "value": 0,
+    "authority": "application default (recorded by workflow coordinator)",
+    "evidence_refs": [
+      "evaluation.config",
+      "workflow_config.origins"
+    ],
+    "support": "Exact value and caller/default provenance were saved before planning. This does not establish scientific optimality."
+  },
+  {
+    "choice": "evaluation.max_plot_samples",
+    "value": 10000,
+    "authority": "application default (recorded by workflow coordinator)",
+    "evidence_refs": [
+      "evaluation.config",
+      "workflow_config.origins"
+    ],
+    "support": "Exact value and caller/default provenance were saved before planning. This does not establish scientific optimality."
+  },
+  {
+    "choice": "evaluation.max_categories",
+    "value": 20,
+    "authority": "application default (recorded by workflow coordinator)",
+    "evidence_refs": [
+      "evaluation.config",
+      "workflow_config.origins"
+    ],
+    "support": "Exact value and caller/default provenance were saved before planning. This does not establish scientific optimality."
+  },
+  {
+    "choice": "evaluation.threads",
+    "value": 2,
+    "authority": "application default (recorded by workflow coordinator)",
+    "evidence_refs": [
+      "evaluation.config",
+      "workflow_config.origins"
+    ],
+    "support": "Exact value and caller/default provenance were saved before planning. This does not establish scientific optimality."
+  },
+  {
+    "choice": "diagnostics.max_samples",
+    "value": 512,
+    "authority": "application default (recorded by workflow coordinator)",
+    "evidence_refs": [
+      "diagnostics.config",
+      "workflow_config.origins"
+    ],
+    "support": "Exact value and caller/default provenance were saved before planning. This does not establish scientific optimality."
+  },
+  {
+    "choice": "diagnostics.max_working_bytes",
+    "value": 128000000,
+    "authority": "application default (recorded by workflow coordinator)",
+    "evidence_refs": [
+      "diagnostics.config",
+      "workflow_config.origins"
+    ],
+    "support": "Exact value and caller/default provenance were saved before planning. This does not establish scientific optimality."
+  },
+  {
+    "choice": "diagnostics.seed",
+    "value": 0,
+    "authority": "application default (recorded by workflow coordinator)",
+    "evidence_refs": [
+      "diagnostics.config",
+      "workflow_config.origins"
+    ],
+    "support": "Exact value and caller/default provenance were saved before planning. This does not establish scientific optimality."
+  },
+  {
+    "choice": "diagnostics.neighbors",
+    "value": [
+      5,
+      15,
+      30
+    ],
+    "authority": "application default (recorded by workflow coordinator)",
+    "evidence_refs": [
+      "diagnostics.config",
+      "workflow_config.origins"
+    ],
+    "support": "Exact value and caller/default provenance were saved before planning. This does not establish scientific optimality."
+  },
+  {
+    "choice": "execution.threads",
+    "value": 2,
+    "authority": "application default (recorded by workflow coordinator)",
+    "evidence_refs": [
+      "execution.threads",
+      "workflow_config.origins"
+    ],
+    "support": "Exact value and caller/default provenance were saved before planning. This does not establish scientific optimality."
+  },
+  {
+    "choice": "execution.timeout_seconds_per_attempt",
+    "value": 600,
+    "authority": "application default (recorded by workflow coordinator)",
+    "evidence_refs": [
+      "execution.timeout_seconds_per_attempt",
+      "workflow_config.origins"
+    ],
+    "support": "Exact value and caller/default provenance were saved before planning. This does not establish scientific optimality."
+  },
+  {
+    "choice": "execution.seed",
+    "value": 0,
+    "authority": "Execution configuration",
+    "evidence_refs": [
+      "execution.seed"
+    ],
+    "support": "Resource/reproducibility/failure policy. Caller-vs-default provenance and a per-value rationale were not saved."
+  },
+  {
+    "choice": "execution.allow_fallback",
+    "value": true,
+    "authority": "application default (recorded by workflow coordinator)",
+    "evidence_refs": [
+      "execution.allow_fallback",
+      "workflow_config.origins"
+    ],
+    "support": "Exact value and caller/default provenance were saved before planning. This does not establish scientific optimality."
+  },
+  {
+    "choice": "workflow.loader.split",
+    "value": null,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.loader.orientation",
+    "value": null,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.loader.label_column",
+    "value": null,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.loader.id_column",
+    "value": null,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.method_policy",
+    "value": "all_suitable",
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.dimensions",
+    "value": 2,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.dimension_mode",
+    "value": "fixed",
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.dimension_search.max_dimensions",
+    "value": 20,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.dimension_search.candidates",
+    "value": [
+      2,
+      3,
+      5,
+      10,
+      20
+    ],
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.dimension_search.max_fits",
+    "value": 5,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.dimension_search.total_seconds",
+    "value": 600,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.dimension_search.variance_target",
+    "value": 0.9,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.dimension_search.distance_error_target",
+    "value": 0.1,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.dimension_search.trustworthiness_target",
+    "value": 0.95,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.dimension_search.reconstruction_target",
+    "value": 0.1,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.dimension_search.reconstruction_weight",
+    "value": 0.1,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.dimension_search.complexity_penalty",
+    "value": 0.01,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.dimension_search.min_improvement",
+    "value": 0.005,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.dimension_search.plateau_patience",
+    "value": 2,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.dimension_search.evaluation_samples",
+    "value": 256,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.dimension_search.evaluation_neighbors",
+    "value": 5,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.preprocessing_attempts",
+    "value": 2,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.selection_attempts",
+    "value": 1,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.max_model_calls",
+    "value": 5,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.planner_timeout",
+    "value": 180,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.resources.max_working_bytes",
+    "value": 1000000000,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.resources.max_manifold_observations",
+    "value": 5000,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.diagnostics.max_samples",
+    "value": 512,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.diagnostics.max_working_bytes",
+    "value": 128000000,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.diagnostics.seed",
+    "value": 0,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.diagnostics.neighbors",
+    "value": [
+      5,
+      15,
+      30
+    ],
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.execution.timeout",
+    "value": 600,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.execution.threads",
+    "value": 2,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.execution.allow_fallback",
+    "value": true,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.evaluation.max_samples",
+    "value": 512,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.evaluation.max_working_bytes",
+    "value": 128000000,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.evaluation.neighbors",
+    "value": 5,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.evaluation.seed",
+    "value": 0,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.evaluation.max_plot_samples",
+    "value": 10000,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.evaluation.max_categories",
+    "value": 20,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.evaluation.threads",
+    "value": 2,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.report.name",
+    "value": "generated_report_2",
+    "authority": "caller configuration",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.report.mode",
+    "value": "codex",
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.report.timeout",
+    "value": 300,
+    "authority": "caller configuration",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  },
+  {
+    "choice": "workflow.report.color_column",
+    "value": null,
+    "authority": "application default",
+    "evidence_refs": [
+      "workflow_config.origins"
+    ],
+    "support": "Initial configuration; unused method/mode-specific settings are retained for reproducibility, not claimed to have been applied."
+  }
+]

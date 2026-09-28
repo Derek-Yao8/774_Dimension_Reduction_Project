@@ -1,0 +1,30 @@
+{
+  "status": "preprocessing_complete",
+  "explanation": "Retain all observations and pixel features in their shared intensity units. No count transformations or reduction are needed at this stage.",
+  "plan": {
+    "reason": "Keep the original RGB intensities without scaling or centering to preserve their common 0\u2013255 units and relative variation. The user confirms these are not counts, so count normalization and log1p are unnecessary. No missing, infinite, all-missing, or constant features are reported, so retain error policies and omit imputation, feature drops, and constant removal. All features are numeric; labels remain metadata. Retain all 10,004 observations without a new split. Output dimensionality is configured separately; this plan performs no dimensionality reduction. All resource limits remain at their defaults.",
+    "schema_version": "1.0",
+    "drop_features": [],
+    "infinity": "error",
+    "missing": "error",
+    "all_missing": "error",
+    "categorical": "error",
+    "remove_constants": false,
+    "count_data_confirmed": false,
+    "normalize_total": null,
+    "log1p": false,
+    "scale": "none",
+    "center": false,
+    "max_categories": 100,
+    "max_output_features": 100000,
+    "max_dense_bytes": 1000000000,
+    "ambiguity_resolutions": []
+  },
+  "output_shape": [
+    10004,
+    2352
+  ],
+  "reduction_executed": false,
+  "validation_history": [],
+  "backend": "codex_cli_chatgpt"
+}

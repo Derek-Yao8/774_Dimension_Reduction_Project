@@ -1,0 +1,2359 @@
+{
+  "input_profile": {
+    "stage": "before preprocessing",
+    "source": "evidence/input_profile.json",
+    "value": {
+      "n_observations": 2700,
+      "n_features": 32738,
+      "storage": "sparse_csr",
+      "feature_types": {
+        "numeric": 32738
+      },
+      "missing_values": 0,
+      "infinite_values": 0,
+      "numeric_zero_fraction": 0.9741281057464086,
+      "resource_estimates": {
+        "dense_float64_matrix_bytes": 707140800,
+        "one_dense_pairwise_float64_matrix_bytes": 58320000,
+        "note": "Array sizes only, not estimates of total algorithm memory."
+      },
+      "labels": {
+        "available": false,
+        "used_as_features": false,
+        "columns": []
+      },
+      "assumptions": [
+        "Transposed 10x matrix to observations by features; counts remain unchanged."
+      ],
+      "ambiguities": [],
+      "warnings": [],
+      "format": "10x_mtx",
+      "constant_feature_count": 16104,
+      "all_missing_feature_count": 0,
+      "feature_details": [
+        {
+          "position": 0,
+          "name": "ENSG00000243485",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 1,
+          "name": "ENSG00000237613",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 2,
+          "name": "ENSG00000186092",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 3,
+          "name": "ENSG00000238009",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 4,
+          "name": "ENSG00000239945",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 5,
+          "name": "ENSG00000237683",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2691,
+          "finite_min": 0.0,
+          "finite_max": 1.0,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 6,
+          "name": "ENSG00000239906",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 7,
+          "name": "ENSG00000241599",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 8,
+          "name": "ENSG00000228463",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2697,
+          "finite_min": 0.0,
+          "finite_max": 1.0,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 9,
+          "name": "ENSG00000237094",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 10,
+          "name": "ENSG00000235249",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 11,
+          "name": "ENSG00000236601",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 12,
+          "name": "ENSG00000236743",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 13,
+          "name": "ENSG00000231709",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 14,
+          "name": "ENSG00000235146",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 15,
+          "name": "ENSG00000239664",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 16,
+          "name": "ENSG00000230021",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 17,
+          "name": "ENSG00000223659",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 18,
+          "name": "ENSG00000185097",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 19,
+          "name": "ENSG00000235373",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 20,
+          "name": "ENSG00000240618",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 21,
+          "name": "ENSG00000229905",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 22,
+          "name": "ENSG00000228327",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2695,
+          "finite_min": 0.0,
+          "finite_max": 1.0,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 23,
+          "name": "ENSG00000237491",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2697,
+          "finite_min": 0.0,
+          "finite_max": 1.0,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 24,
+          "name": "ENSG00000269831",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 25,
+          "name": "ENSG00000177757",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2698,
+          "finite_min": 0.0,
+          "finite_max": 1.0,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 26,
+          "name": "ENSG00000225880",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2682,
+          "finite_min": 0.0,
+          "finite_max": 1.0,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 27,
+          "name": "ENSG00000230368",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2698,
+          "finite_min": 0.0,
+          "finite_max": 1.0,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 28,
+          "name": "ENSG00000269308",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 29,
+          "name": "ENSG00000272438",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 30,
+          "name": "ENSG00000230699",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        },
+        {
+          "position": 31,
+          "name": "ENSG00000241180",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2700,
+          "finite_min": 0.0,
+          "finite_max": 0.0,
+          "constant_among_finite": true,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": true
+        }
+      ],
+      "feature_details_truncated": true
+    }
+  },
+  "processed_profile": {
+    "stage": "before method selection",
+    "source": "evidence/processed_profile.json",
+    "value": {
+      "n_observations": 2700,
+      "n_features": 16634,
+      "storage": "sparse_csr",
+      "feature_types": {
+        "numeric": 16634
+      },
+      "missing_values": 0,
+      "infinite_values": 0,
+      "numeric_zero_fraction": 0.9490805534402985,
+      "resource_estimates": {
+        "dense_float64_matrix_bytes": 359294400,
+        "one_dense_pairwise_float64_matrix_bytes": 58320000,
+        "note": "Array sizes only, not estimates of total algorithm memory."
+      },
+      "labels": {
+        "available": false,
+        "used_as_features": false,
+        "columns": []
+      },
+      "assumptions": [
+        "Transposed 10x matrix to observations by features; counts remain unchanged.",
+        "Preprocessing fitted on the full exploratory dataset."
+      ],
+      "ambiguities": [],
+      "warnings": [],
+      "format": "10x_mtx",
+      "constant_feature_count": 0,
+      "all_missing_feature_count": 0,
+      "feature_details": [
+        {
+          "position": 0,
+          "name": "feature_0",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2691,
+          "finite_min": 0.0,
+          "finite_max": 1.8807838271493862,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 1,
+          "name": "feature_1",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2697,
+          "finite_min": 0.0,
+          "finite_max": 1.828080487918096,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 2,
+          "name": "feature_2",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2695,
+          "finite_min": 0.0,
+          "finite_max": 1.8232755773249805,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 3,
+          "name": "feature_3",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2697,
+          "finite_min": 0.0,
+          "finite_max": 1.2881440174119532,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 4,
+          "name": "feature_4",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2698,
+          "finite_min": 0.0,
+          "finite_max": 1.3911136475558394,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 5,
+          "name": "feature_5",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2682,
+          "finite_min": 0.0,
+          "finite_max": 1.9687096051291169,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 6,
+          "name": "feature_6",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2698,
+          "finite_min": 0.0,
+          "finite_max": 1.5347865426876475,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 7,
+          "name": "feature_7",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2699,
+          "finite_min": 0.0,
+          "finite_max": 1.852141729387025,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 8,
+          "name": "feature_8",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2442,
+          "finite_min": 0.0,
+          "finite_max": 3.7911125655911073,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 9,
+          "name": "feature_9",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2691,
+          "finite_min": 0.0,
+          "finite_max": 2.401539591700538,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 10,
+          "name": "feature_10",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2693,
+          "finite_min": 0.0,
+          "finite_max": 2.2166583873290833,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 11,
+          "name": "feature_11",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2697,
+          "finite_min": 0.0,
+          "finite_max": 1.6630414903143547,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 12,
+          "name": "feature_12",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2555,
+          "finite_min": 0.0,
+          "finite_max": 2.5653186677787247,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 13,
+          "name": "feature_13",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2696,
+          "finite_min": 0.0,
+          "finite_max": 1.8984244685237766,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 14,
+          "name": "feature_14",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 1494,
+          "finite_min": 0.0,
+          "finite_max": 4.88752200580274,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 15,
+          "name": "feature_15",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2692,
+          "finite_min": 0.0,
+          "finite_max": 2.5923354823577114,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 16,
+          "name": "feature_16",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2676,
+          "finite_min": 0.0,
+          "finite_max": 2.0101080913787897,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 17,
+          "name": "feature_17",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2608,
+          "finite_min": 0.0,
+          "finite_max": 3.2072375260370842,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 18,
+          "name": "feature_18",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2545,
+          "finite_min": 0.0,
+          "finite_max": 3.7369458850897552,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 19,
+          "name": "feature_19",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2360,
+          "finite_min": 0.0,
+          "finite_max": 2.926802499521078,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 20,
+          "name": "feature_20",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2642,
+          "finite_min": 0.0,
+          "finite_max": 2.4232773460697876,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 21,
+          "name": "feature_21",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2697,
+          "finite_min": 0.0,
+          "finite_max": 2.287426532563204,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 22,
+          "name": "feature_22",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2699,
+          "finite_min": 0.0,
+          "finite_max": 1.1585510864401058,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 23,
+          "name": "feature_23",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2401,
+          "finite_min": 0.0,
+          "finite_max": 2.9230480395106713,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 24,
+          "name": "feature_24",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2699,
+          "finite_min": 0.0,
+          "finite_max": 1.8159121622909868,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 25,
+          "name": "feature_25",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2637,
+          "finite_min": 0.0,
+          "finite_max": 2.6545629687623284,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 26,
+          "name": "feature_26",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2638,
+          "finite_min": 0.0,
+          "finite_max": 2.3816903809221937,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 27,
+          "name": "feature_27",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2498,
+          "finite_min": 0.0,
+          "finite_max": 5.796476562393516,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 28,
+          "name": "feature_28",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2623,
+          "finite_min": 0.0,
+          "finite_max": 2.6763393329100147,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 29,
+          "name": "feature_29",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2699,
+          "finite_min": 0.0,
+          "finite_max": 1.935018278274633,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 30,
+          "name": "feature_30",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2695,
+          "finite_min": 0.0,
+          "finite_max": 1.785536673789786,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        },
+        {
+          "position": 31,
+          "name": "feature_31",
+          "kind": "numeric",
+          "dtype": "float64",
+          "missing": 0,
+          "infinite": 0,
+          "zeros": 2695,
+          "finite_min": 0.0,
+          "finite_max": 1.7544235307145353,
+          "constant_among_finite": false,
+          "all_missing": false,
+          "nonnegative_finite": true,
+          "integer_valued_finite": false
+        }
+      ],
+      "feature_details_truncated": true
+    }
+  },
+  "preprocessing.status": {
+    "stage": "before execution",
+    "source": "evidence/preprocessing.json#/status",
+    "value": "preprocessing_complete"
+  },
+  "preprocessing.explanation": {
+    "stage": "before execution",
+    "source": "evidence/preprocessing.json#/explanation",
+    "value": "Recommend total-count normalization and log1p for confirmed raw UMI counts, followed by constant-feature removal while preserving sparse storage and all cells."
+  },
+  "preprocessing.plan": {
+    "stage": "before execution",
+    "source": "evidence/preprocessing.json#/plan",
+    "value": {
+      "reason": "User context confirms raw nonnegative integer UMI counts in cells-by-genes orientation. Normalize each cell to a total of 10000 to account for differing count totals, then apply log1p to compress the count range. Normalization must reject negative or noninteger values and zero-total rows; row totals are not established by this profile, so validate before transforming and do not silently drop cells. Remove constant features because 16104 are reported and they provide no variation across cells. Use automatic constant removal rather than explicit feature drops because feature details are truncated. Keep scaling disabled and do not center to preserve sparse storage. Retain error policies for missing, infinite, and all-missing values. Retain all cells and defer additional cell-quality filtering and variable-gene selection. No reduction executes here; the separately configured output dimension remains 2.",
+      "schema_version": "1.0",
+      "drop_features": [],
+      "infinity": "error",
+      "missing": "error",
+      "all_missing": "error",
+      "categorical": "error",
+      "remove_constants": true,
+      "count_data_confirmed": true,
+      "normalize_total": 10000,
+      "log1p": true,
+      "scale": "none",
+      "center": false,
+      "max_categories": 100,
+      "max_output_features": 100000,
+      "max_dense_bytes": 1000000000,
+      "ambiguity_resolutions": []
+    }
+  },
+  "preprocessing.output_shape": {
+    "stage": "before execution",
+    "source": "evidence/preprocessing.json#/output_shape",
+    "value": [
+      2700,
+      16634
+    ]
+  },
+  "preprocessing.reduction_executed": {
+    "stage": "before execution",
+    "source": "evidence/preprocessing.json#/reduction_executed",
+    "value": false
+  },
+  "preprocessing.validation_history": {
+    "stage": "before execution",
+    "source": "evidence/preprocessing.json#/validation_history",
+    "value": []
+  },
+  "preprocessing.backend": {
+    "stage": "before execution",
+    "source": "evidence/preprocessing.json#/backend",
+    "value": "codex_cli_chatgpt"
+  },
+  "selection.status": {
+    "stage": "before execution",
+    "source": "evidence/selection.json#/status",
+    "value": "selection_complete"
+  },
+  "selection.plan": {
+    "stage": "before execution",
+    "source": "evidence/selection.json#/plan",
+    "value": {
+      "method": "pca",
+      "n_components": 2,
+      "parameters": {
+        "svd_solver": "arpack"
+      },
+      "reason": "Execute all four suitable eligible methods sequentially: PCA, MDS, t-SNE and UMAP, without ranking. Preserve preprocessing, all cells, absent labels, resource limits, fixed two-dimensional output and seed 0. Scientific assessments use only the recorded 231-observation sample: distance CV is 0.0541 and the median nearest-to-pairwise distance ratio is 0.8959. Sample union graphs are connected at k=5,15,30, but this establishes neither meaningful neighborhoods nor full-data connectivity. These observations warrant caution rather than a claim that full-data manifold structure is absent.",
+      "scientific_reason": "Centered PCA provides a defensible linear variance summary of the fixed transformed features without assuming a manifold. No covariance spectrum is available, so adequacy of two components is unknown.",
+      "feasibility_reason": "Recorded eligibility is true. Use the sparse-compatible centered estimator with arpack; do not manually densify or substitute uncentered TruncatedSVD.",
+      "limitations": [
+        "Arpack is required for sparse input; retain two components, no whitening and seed 0.",
+        "Sample feature variances do not establish explained variance or intrinsic dimension.",
+        "Unscaled features and deferred quality filtering can influence the retained variance."
+      ],
+      "alternatives": {
+        "mds": {
+          "scientific_reason": "Metric Euclidean MDS directly evaluates a distance-preserving representation of the fixed input. It is a useful global-distance objective even though concentrated sampled distances suggest that a faithful two-dimensional representation may be difficult.",
+          "feasibility_reason": "Recorded eligibility is true: 2700 observations are below the 5000 limit and one pairwise array is 58320000 bytes. Quadratic storage and iterative work remain material within the recorded screening."
+        },
+        "isomap": {
+          "scientific_reason": "Geodesic interpretation needs meaningful local Euclidean neighborhoods. Weak sampled neighbor contrast and sample-only connectivity provide insufficient support for treating graph paths as intrinsic distances in this analysis.",
+          "feasibility_reason": "Recorded eligibility is true, but computational eligibility does not resolve the scientific neighborhood concern or establish full-data connectivity."
+        },
+        "lle": {
+          "scientific_reason": "Standard LLE relies on stable local reconstruction weights. The recorded sample provides no local conditioning or reconstruction evidence, while weak neighbor contrast makes this assumption insufficiently supported.",
+          "feasibility_reason": "Recorded eligibility is false: sparse LLE is outside the execution contract and implicit densification is prohibited. This exclusion is independent of the scientific assessment."
+        },
+        "kernel_pca": {
+          "scientific_reason": "RBF Kernel PCA would introduce a bandwidth-defined nonlinear geometry without a specific supported nonlinear feature objective here. Concentrated sampled distances give limited justification for replacing the directly interpretable variance and Euclidean-distance objectives with this kernel geometry.",
+          "feasibility_reason": "Recorded eligibility is true; quadratic kernel storage passes the recorded screen. Exclusion is scientific, not a claimed resource failure."
+        },
+        "laplacian_eigenmaps": {
+          "scientific_reason": "A binary graph spectral representation depends strongly on meaningful neighborhood membership. Weak sampled distance contrast and connectivity alone do not sufficiently support that graph as the scientific geometry.",
+          "feasibility_reason": "Recorded eligibility is true, but the required connected full-data union binary graph has not been established by sample-only diagnostics."
+        },
+        "diffusion_maps": {
+          "scientific_reason": "Interpreting Gaussian-kernel transport requires a defensible affinity scale and treatment of sampling density. The recorded distance concentration and absence of a supported diffusion objective leave that interpretation insufficiently grounded for selection.",
+          "feasibility_reason": "Recorded eligibility is true and dense quadratic affinity storage passes the recorded screening. No computational ineligibility is inferred."
+        },
+        "tsne": {
+          "scientific_reason": "t-SNE is suitable for exploratory visualization of local similarities without claiming a global metric or intrinsic manifold. Weak sampled neighbor contrast requires restrained interpretation, but does not by itself invalidate this visualization objective.",
+          "feasibility_reason": "Recorded eligibility is true and two dimensions satisfy the Barnes-Hut requirement of one to three dimensions. Use random initialization and no preliminary PCA."
+        },
+        "umap": {
+          "scientific_reason": "UMAP is suitable as an exploratory Euclidean-neighborhood visualization with explicit caution about uncertain local contrast. Selection does not endorse a biological manifold or quantitative interpretation of the layout.",
+          "feasibility_reason": "Recorded eligibility is true. Use Euclidean input, random initialization, seed 0 and single-thread optimization, without preliminary PCA or spectral initialization."
+        }
+      }
+    }
+  },
+  "selection.available_methods": {
+    "stage": "before execution",
+    "source": "evidence/selection.json#/available_methods",
+    "value": [
+      "pca",
+      "mds",
+      "isomap",
+      "lle",
+      "kernel_pca",
+      "laplacian_eigenmaps",
+      "diffusion_maps",
+      "tsne",
+      "umap"
+    ]
+  },
+  "selection.resource_limits": {
+    "stage": "before execution",
+    "source": "evidence/selection.json#/resource_limits",
+    "value": {
+      "max_working_bytes": 1000000000,
+      "max_manifold_observations": 5000
+    }
+  },
+  "selection.feasibility_checks": {
+    "stage": "before execution",
+    "source": "evidence/selection.json#/feasibility_checks",
+    "value": {
+      "pca": {
+        "eligible": true,
+        "reasons": []
+      },
+      "mds": {
+        "eligible": true,
+        "reasons": []
+      },
+      "isomap": {
+        "eligible": true,
+        "reasons": []
+      },
+      "lle": {
+        "eligible": false,
+        "reasons": [
+          "Sparse LLE is outside the current execution contract; no implicit densification."
+        ]
+      },
+      "kernel_pca": {
+        "eligible": true,
+        "reasons": []
+      },
+      "laplacian_eigenmaps": {
+        "eligible": true,
+        "reasons": []
+      },
+      "diffusion_maps": {
+        "eligible": true,
+        "reasons": []
+      },
+      "tsne": {
+        "eligible": true,
+        "reasons": []
+      },
+      "umap": {
+        "eligible": true,
+        "reasons": []
+      }
+    }
+  },
+  "selection.input_profile_sha256": {
+    "stage": "before execution",
+    "source": "evidence/selection.json#/input_profile_sha256",
+    "value": "80743275e9e7eac7e3052d58973f3b7f576d07af1f61e0b58712b2ee3459e6fd"
+  },
+  "selection.random_state": {
+    "stage": "before execution",
+    "source": "evidence/selection.json#/random_state",
+    "value": 0
+  },
+  "selection.selection_policy": {
+    "stage": "before execution",
+    "source": "evidence/selection.json#/selection_policy",
+    "value": "all_suitable"
+  },
+  "selection.selected_methods": {
+    "stage": "before execution",
+    "source": "evidence/selection.json#/selected_methods",
+    "value": [
+      "pca",
+      "mds",
+      "tsne",
+      "umap"
+    ]
+  },
+  "selection.explanation": {
+    "stage": "before execution",
+    "source": "evidence/selection.json#/explanation",
+    "value": "Member of a jointly selected set; alternatives are assessments, not necessarily exclusions."
+  },
+  "execution.status": {
+    "stage": "after execution",
+    "source": "evidence/execution.json#/status",
+    "value": "execution_complete"
+  },
+  "execution.original_plan": {
+    "stage": "after execution",
+    "source": "evidence/execution.json#/original_plan",
+    "value": {
+      "method": "pca",
+      "n_components": 2,
+      "parameters": {
+        "svd_solver": "arpack"
+      },
+      "reason": "Execute all four suitable eligible methods sequentially: PCA, MDS, t-SNE and UMAP, without ranking. Preserve preprocessing, all cells, absent labels, resource limits, fixed two-dimensional output and seed 0. Scientific assessments use only the recorded 231-observation sample: distance CV is 0.0541 and the median nearest-to-pairwise distance ratio is 0.8959. Sample union graphs are connected at k=5,15,30, but this establishes neither meaningful neighborhoods nor full-data connectivity. These observations warrant caution rather than a claim that full-data manifold structure is absent.",
+      "scientific_reason": "Centered PCA provides a defensible linear variance summary of the fixed transformed features without assuming a manifold. No covariance spectrum is available, so adequacy of two components is unknown.",
+      "feasibility_reason": "Recorded eligibility is true. Use the sparse-compatible centered estimator with arpack; do not manually densify or substitute uncentered TruncatedSVD.",
+      "limitations": [
+        "Arpack is required for sparse input; retain two components, no whitening and seed 0.",
+        "Sample feature variances do not establish explained variance or intrinsic dimension.",
+        "Unscaled features and deferred quality filtering can influence the retained variance."
+      ],
+      "alternatives": {
+        "mds": {
+          "scientific_reason": "Metric Euclidean MDS directly evaluates a distance-preserving representation of the fixed input. It is a useful global-distance objective even though concentrated sampled distances suggest that a faithful two-dimensional representation may be difficult.",
+          "feasibility_reason": "Recorded eligibility is true: 2700 observations are below the 5000 limit and one pairwise array is 58320000 bytes. Quadratic storage and iterative work remain material within the recorded screening."
+        },
+        "isomap": {
+          "scientific_reason": "Geodesic interpretation needs meaningful local Euclidean neighborhoods. Weak sampled neighbor contrast and sample-only connectivity provide insufficient support for treating graph paths as intrinsic distances in this analysis.",
+          "feasibility_reason": "Recorded eligibility is true, but computational eligibility does not resolve the scientific neighborhood concern or establish full-data connectivity."
+        },
+        "lle": {
+          "scientific_reason": "Standard LLE relies on stable local reconstruction weights. The recorded sample provides no local conditioning or reconstruction evidence, while weak neighbor contrast makes this assumption insufficiently supported.",
+          "feasibility_reason": "Recorded eligibility is false: sparse LLE is outside the execution contract and implicit densification is prohibited. This exclusion is independent of the scientific assessment."
+        },
+        "kernel_pca": {
+          "scientific_reason": "RBF Kernel PCA would introduce a bandwidth-defined nonlinear geometry without a specific supported nonlinear feature objective here. Concentrated sampled distances give limited justification for replacing the directly interpretable variance and Euclidean-distance objectives with this kernel geometry.",
+          "feasibility_reason": "Recorded eligibility is true; quadratic kernel storage passes the recorded screen. Exclusion is scientific, not a claimed resource failure."
+        },
+        "laplacian_eigenmaps": {
+          "scientific_reason": "A binary graph spectral representation depends strongly on meaningful neighborhood membership. Weak sampled distance contrast and connectivity alone do not sufficiently support that graph as the scientific geometry.",
+          "feasibility_reason": "Recorded eligibility is true, but the required connected full-data union binary graph has not been established by sample-only diagnostics."
+        },
+        "diffusion_maps": {
+          "scientific_reason": "Interpreting Gaussian-kernel transport requires a defensible affinity scale and treatment of sampling density. The recorded distance concentration and absence of a supported diffusion objective leave that interpretation insufficiently grounded for selection.",
+          "feasibility_reason": "Recorded eligibility is true and dense quadratic affinity storage passes the recorded screening. No computational ineligibility is inferred."
+        },
+        "tsne": {
+          "scientific_reason": "t-SNE is suitable for exploratory visualization of local similarities without claiming a global metric or intrinsic manifold. Weak sampled neighbor contrast requires restrained interpretation, but does not by itself invalidate this visualization objective.",
+          "feasibility_reason": "Recorded eligibility is true and two dimensions satisfy the Barnes-Hut requirement of one to three dimensions. Use random initialization and no preliminary PCA."
+        },
+        "umap": {
+          "scientific_reason": "UMAP is suitable as an exploratory Euclidean-neighborhood visualization with explicit caution about uncertain local contrast. Selection does not endorse a biological manifold or quantitative interpretation of the layout.",
+          "feasibility_reason": "Recorded eligibility is true. Use Euclidean input, random initialization, seed 0 and single-thread optimization, without preliminary PCA or spectral initialization."
+        }
+      }
+    }
+  },
+  "execution.attempts": {
+    "stage": "after execution",
+    "source": "evidence/execution.json#/attempts",
+    "value": [
+      {
+        "plan": {
+          "method": "pca",
+          "n_components": 2,
+          "parameters": {
+            "svd_solver": "arpack"
+          },
+          "reason": "Execute all four suitable eligible methods sequentially: PCA, MDS, t-SNE and UMAP, without ranking. Preserve preprocessing, all cells, absent labels, resource limits, fixed two-dimensional output and seed 0. Scientific assessments use only the recorded 231-observation sample: distance CV is 0.0541 and the median nearest-to-pairwise distance ratio is 0.8959. Sample union graphs are connected at k=5,15,30, but this establishes neither meaningful neighborhoods nor full-data connectivity. These observations warrant caution rather than a claim that full-data manifold structure is absent.",
+          "scientific_reason": "Centered PCA provides a defensible linear variance summary of the fixed transformed features without assuming a manifold. No covariance spectrum is available, so adequacy of two components is unknown.",
+          "feasibility_reason": "Recorded eligibility is true. Use the sparse-compatible centered estimator with arpack; do not manually densify or substitute uncentered TruncatedSVD.",
+          "limitations": [
+            "Arpack is required for sparse input; retain two components, no whitening and seed 0.",
+            "Sample feature variances do not establish explained variance or intrinsic dimension.",
+            "Unscaled features and deferred quality filtering can influence the retained variance."
+          ],
+          "alternatives": {
+            "mds": {
+              "scientific_reason": "Metric Euclidean MDS directly evaluates a distance-preserving representation of the fixed input. It is a useful global-distance objective even though concentrated sampled distances suggest that a faithful two-dimensional representation may be difficult.",
+              "feasibility_reason": "Recorded eligibility is true: 2700 observations are below the 5000 limit and one pairwise array is 58320000 bytes. Quadratic storage and iterative work remain material within the recorded screening."
+            },
+            "isomap": {
+              "scientific_reason": "Geodesic interpretation needs meaningful local Euclidean neighborhoods. Weak sampled neighbor contrast and sample-only connectivity provide insufficient support for treating graph paths as intrinsic distances in this analysis.",
+              "feasibility_reason": "Recorded eligibility is true, but computational eligibility does not resolve the scientific neighborhood concern or establish full-data connectivity."
+            },
+            "lle": {
+              "scientific_reason": "Standard LLE relies on stable local reconstruction weights. The recorded sample provides no local conditioning or reconstruction evidence, while weak neighbor contrast makes this assumption insufficiently supported.",
+              "feasibility_reason": "Recorded eligibility is false: sparse LLE is outside the execution contract and implicit densification is prohibited. This exclusion is independent of the scientific assessment."
+            },
+            "kernel_pca": {
+              "scientific_reason": "RBF Kernel PCA would introduce a bandwidth-defined nonlinear geometry without a specific supported nonlinear feature objective here. Concentrated sampled distances give limited justification for replacing the directly interpretable variance and Euclidean-distance objectives with this kernel geometry.",
+              "feasibility_reason": "Recorded eligibility is true; quadratic kernel storage passes the recorded screen. Exclusion is scientific, not a claimed resource failure."
+            },
+            "laplacian_eigenmaps": {
+              "scientific_reason": "A binary graph spectral representation depends strongly on meaningful neighborhood membership. Weak sampled distance contrast and connectivity alone do not sufficiently support that graph as the scientific geometry.",
+              "feasibility_reason": "Recorded eligibility is true, but the required connected full-data union binary graph has not been established by sample-only diagnostics."
+            },
+            "diffusion_maps": {
+              "scientific_reason": "Interpreting Gaussian-kernel transport requires a defensible affinity scale and treatment of sampling density. The recorded distance concentration and absence of a supported diffusion objective leave that interpretation insufficiently grounded for selection.",
+              "feasibility_reason": "Recorded eligibility is true and dense quadratic affinity storage passes the recorded screening. No computational ineligibility is inferred."
+            },
+            "tsne": {
+              "scientific_reason": "t-SNE is suitable for exploratory visualization of local similarities without claiming a global metric or intrinsic manifold. Weak sampled neighbor contrast requires restrained interpretation, but does not by itself invalidate this visualization objective.",
+              "feasibility_reason": "Recorded eligibility is true and two dimensions satisfy the Barnes-Hut requirement of one to three dimensions. Use random initialization and no preliminary PCA."
+            },
+            "umap": {
+              "scientific_reason": "UMAP is suitable as an exploratory Euclidean-neighborhood visualization with explicit caution about uncertain local contrast. Selection does not endorse a biological manifold or quantitative interpretation of the layout.",
+              "feasibility_reason": "Recorded eligibility is true. Use Euclidean input, random initialization, seed 0 and single-thread optimization, without preliminary PCA or spectral initialization."
+            }
+          }
+        },
+        "status": "complete",
+        "metrics": {
+          "explained_variance_ratio": [
+            0.04524546744523534,
+            0.016033844876313562
+          ],
+          "singular_values": [
+            489.36345377328894,
+            291.31498953124515
+          ]
+        },
+        "effective_parameters": {
+          "copy": true,
+          "iterated_power": 7,
+          "n_components": 2,
+          "n_oversamples": 10,
+          "power_iteration_normalizer": "QR",
+          "random_state": 0,
+          "svd_solver": "arpack",
+          "tol": 0.0,
+          "whiten": false
+        },
+        "dependency_versions": {},
+        "warnings": [],
+        "elapsed_seconds": 0.8512885829986772
+      }
+    ]
+  },
+  "execution.fallback_occurred": {
+    "stage": "after execution",
+    "source": "evidence/execution.json#/fallback_occurred",
+    "value": false
+  },
+  "execution.fallback_planner_calls": {
+    "stage": "after execution",
+    "source": "evidence/execution.json#/fallback_planner_calls",
+    "value": 0
+  },
+  "execution.final_method": {
+    "stage": "after execution",
+    "source": "evidence/execution.json#/final_method",
+    "value": "pca"
+  },
+  "execution.input_sha256": {
+    "stage": "after execution",
+    "source": "evidence/execution.json#/input_sha256",
+    "value": "e967fae1a2e14f4118f43306db39335025798eecc4cd199c4a57c741f4e0696e"
+  },
+  "execution.selection_sha256": {
+    "stage": "after execution",
+    "source": "evidence/execution.json#/selection_sha256",
+    "value": "846202b0a2cae8ee4577fd77f4138613da7687fd4ffb6d467fbe8b6145d3be17"
+  },
+  "execution.timeout_seconds_per_attempt": {
+    "stage": "after execution",
+    "source": "evidence/execution.json#/timeout_seconds_per_attempt",
+    "value": 600
+  },
+  "execution.threads": {
+    "stage": "after execution",
+    "source": "evidence/execution.json#/threads",
+    "value": 2
+  },
+  "execution.seed": {
+    "stage": "after execution",
+    "source": "evidence/execution.json#/seed",
+    "value": 0
+  },
+  "execution.versions": {
+    "stage": "after execution",
+    "source": "evidence/execution.json#/versions",
+    "value": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "pandas": "2.3.3"
+    }
+  },
+  "execution.python": {
+    "stage": "after execution",
+    "source": "evidence/execution.json#/python",
+    "value": "3.13.2"
+  },
+  "execution.allow_fallback": {
+    "stage": "after execution",
+    "source": "evidence/execution.json#/allow_fallback",
+    "value": true
+  },
+  "execution.notices": {
+    "stage": "after execution",
+    "source": "evidence/execution.json#/notices",
+    "value": [
+      "EXECUTION SUCCEEDED: pca {\"svd_solver\": \"arpack\"}"
+    ]
+  },
+  "execution.dimension_mode": {
+    "stage": "after execution",
+    "source": "evidence/execution.json#/dimension_mode",
+    "value": "fixed"
+  },
+  "execution.output_shape": {
+    "stage": "after execution",
+    "source": "evidence/execution.json#/output_shape",
+    "value": [
+      2700,
+      2
+    ]
+  },
+  "execution.selected_dimensions": {
+    "stage": "after execution",
+    "source": "evidence/execution.json#/selected_dimensions",
+    "value": 2
+  },
+  "execution.embedding_sha256": {
+    "stage": "after execution",
+    "source": "evidence/execution.json#/embedding_sha256",
+    "value": "4c9d64115c0556a5d45d1bde8bad4dd63bacb7db0a3b0c8ad7797253e4dae809"
+  },
+  "evaluation.status": {
+    "stage": "after execution",
+    "source": "evidence/evaluation.json#/status",
+    "value": "evaluation_complete"
+  },
+  "evaluation.config": {
+    "stage": "after execution",
+    "source": "evidence/evaluation.json#/config",
+    "value": {
+      "max_samples": 512,
+      "max_working_bytes": 128000000,
+      "neighbors": 5,
+      "seed": 0,
+      "max_plot_samples": 10000,
+      "max_categories": 20,
+      "threads": 2
+    }
+  },
+  "evaluation.method": {
+    "stage": "after execution",
+    "source": "evidence/evaluation.json#/method",
+    "value": "pca"
+  },
+  "evaluation.representation_dimensions": {
+    "stage": "after execution",
+    "source": "evidence/evaluation.json#/representation_dimensions",
+    "value": 2
+  },
+  "evaluation.input_sha256": {
+    "stage": "after execution",
+    "source": "evidence/evaluation.json#/input_sha256",
+    "value": "e967fae1a2e14f4118f43306db39335025798eecc4cd199c4a57c741f4e0696e"
+  },
+  "evaluation.embedding_sha256": {
+    "stage": "after execution",
+    "source": "evidence/evaluation.json#/embedding_sha256",
+    "value": "4c9d64115c0556a5d45d1bde8bad4dd63bacb7db0a3b0c8ad7797253e4dae809"
+  },
+  "evaluation.execution_sha256": {
+    "stage": "after execution",
+    "source": "evidence/evaluation.json#/execution_sha256",
+    "value": "0329d8cd384582aa888a2cf08c5c014ecb502c273aa4fa2dbbbcee840b2d5cb9"
+  },
+  "evaluation.versions": {
+    "stage": "after execution",
+    "source": "evidence/evaluation.json#/versions",
+    "value": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "evaluation.fallback_occurred": {
+    "stage": "after execution",
+    "source": "evidence/evaluation.json#/fallback_occurred",
+    "value": false
+  },
+  "evaluation.execution_notices": {
+    "stage": "after execution",
+    "source": "evidence/evaluation.json#/execution_notices",
+    "value": [
+      "EXECUTION SUCCEEDED: pca {\"svd_solver\": \"arpack\"}"
+    ]
+  },
+  "evaluation.limitations": {
+    "stage": "after execution",
+    "source": "evidence/evaluation.json#/limitations",
+    "value": [
+      "Metrics compare Euclidean distances in preprocessed feature space, not raw data or biological truth.",
+      "Neighborhoods are within the recorded sample, not the full dataset; ties can affect ranks.",
+      "Scores are descriptive in-sample evidence, not held-out validation or proof of an optimal plan.",
+      "Memory estimate bounds working arrays heuristically; input storage and library overhead are excluded.",
+      "First-coordinate plots can hide structure. Labels color plots only and do not influence scores.",
+      "Euclidean distortion need not match nonlinear methods objectives; no universal pass/fail threshold."
+    ]
+  },
+  "evaluation.embedding": {
+    "stage": "after execution",
+    "source": "evidence/evaluation.json#/embedding",
+    "value": {
+      "sample_size": 128,
+      "metrics": {
+        "trustworthiness": 0.74671875,
+        "normalized_distance_error": 0.8047855040250662,
+        "scale_aligned_distance_error": 0.5275887344761029,
+        "distance_spearman": 0.5774827426916982,
+        "neighbor_overlap": 0.15468749999999998
+      },
+      "skipped": {},
+      "neighbors": 5,
+      "distance_scale_factor": 3.513600006503618
+    }
+  },
+  "evaluation.view": {
+    "stage": "after execution",
+    "source": "evidence/evaluation.json#/view",
+    "value": {
+      "sample_size": 128,
+      "metrics": {
+        "trustworthiness": 0.74671875,
+        "normalized_distance_error": 0.8047855040250662,
+        "scale_aligned_distance_error": 0.5275887344761029,
+        "distance_spearman": 0.5774827426916982,
+        "neighbor_overlap": 0.15468749999999998
+      },
+      "skipped": {},
+      "neighbors": 5,
+      "distance_scale_factor": 3.513600006503618
+    }
+  },
+  "evaluation.method_metrics": {
+    "stage": "after execution",
+    "source": "evidence/evaluation.json#/method_metrics",
+    "value": {
+      "explained_variance_ratio": [
+        0.04524546744523534,
+        0.016033844876313562
+      ],
+      "singular_values": [
+        489.36345377328894,
+        291.31498953124515
+      ]
+    }
+  },
+  "evaluation.method_metrics_source": {
+    "stage": "after execution",
+    "source": "evidence/evaluation.json#/method_metrics_source",
+    "value": "Successful execution fit; method-specific quantities are not comparable across methods."
+  },
+  "evaluation.plot": {
+    "stage": "after execution",
+    "source": "evidence/evaluation.json#/plot",
+    "value": {
+      "sample_size": 2700,
+      "representation_dimensions": 2,
+      "view_dimensions": 2,
+      "color_column": null,
+      "color_status": "uncolored",
+      "description": "First coordinates of the saved embedding; no new 2D fit."
+    }
+  },
+  "diagnostics.schema_version": {
+    "stage": "before execution",
+    "source": "evidence/diagnostics.json#/schema_version",
+    "value": "1.0"
+  },
+  "diagnostics.status": {
+    "stage": "before execution",
+    "source": "evidence/diagnostics.json#/status",
+    "value": "complete"
+  },
+  "diagnostics.input_shape": {
+    "stage": "before execution",
+    "source": "evidence/diagnostics.json#/input_shape",
+    "value": [
+      2700,
+      16634
+    ]
+  },
+  "diagnostics.config": {
+    "stage": "before execution",
+    "source": "evidence/diagnostics.json#/config",
+    "value": {
+      "max_samples": 512,
+      "max_working_bytes": 128000000,
+      "seed": 0,
+      "neighbors": [
+        5,
+        15,
+        30
+      ]
+    }
+  },
+  "diagnostics.metric": {
+    "stage": "before execution",
+    "source": "evidence/diagnostics.json#/metric",
+    "value": "euclidean"
+  },
+  "diagnostics.limitations": {
+    "stage": "before execution",
+    "source": "evidence/diagnostics.json#/limitations",
+    "value": [
+      "These diagnostics do not prove linearity, manifold structure or an optimal method.",
+      "A sampled graph does not establish full-data connectivity or the same best neighbor count.",
+      "Connectivity at large k can result from inappropriate bridges; it is not a quality score.",
+      "Duplicate and unusual-distance observations are measured, never automatically removed.",
+      "Feature variance is not a covariance spectrum or PCA explained variance.",
+      "Memory screening excludes loading the input and is not a hard process RAM cap."
+    ]
+  },
+  "diagnostics.sample_size": {
+    "stage": "before execution",
+    "source": "evidence/diagnostics.json#/sample_size",
+    "value": 231
+  },
+  "diagnostics.sampled": {
+    "stage": "before execution",
+    "source": "evidence/diagnostics.json#/sampled",
+    "value": true
+  },
+  "diagnostics.estimated_working_bytes": {
+    "stage": "before execution",
+    "source": "evidence/diagnostics.json#/estimated_working_bytes",
+    "value": 127438208
+  },
+  "diagnostics.scope": {
+    "stage": "before execution",
+    "source": "evidence/diagnostics.json#/scope",
+    "value": "sample_only"
+  },
+  "diagnostics.sample_materialized_dense": {
+    "stage": "before execution",
+    "source": "evidence/diagnostics.json#/sample_materialized_dense",
+    "value": true
+  },
+  "diagnostics.duplicates": {
+    "stage": "before execution",
+    "source": "evidence/diagnostics.json#/duplicates",
+    "value": {
+      "extra_identical_rows": 0,
+      "groups_with_duplicates": 0,
+      "rows_in_duplicate_groups": 0,
+      "definition": "Exact equality of postprocessed sampled rows, not biological identity."
+    }
+  },
+  "diagnostics.feature_variance": {
+    "stage": "before execution",
+    "source": "evidence/diagnostics.json#/feature_variance",
+    "value": {
+      "status": "complete",
+      "ddof": 0,
+      "distribution": {
+        "min": 0.0,
+        "q25": 0.0,
+        "median": 0.03198492934446307,
+        "q75": 0.12312827043084347,
+        "max": 3.9245061403734764
+      },
+      "zero_variance_features": 4818,
+      "largest_feature_share": 0.0020068261467666238,
+      "top_five_feature_share": 0.008396729315873886
+    }
+  },
+  "diagnostics.distances": {
+    "stage": "before execution",
+    "source": "evidence/diagnostics.json#/distances",
+    "value": {
+      "status": "complete",
+      "pair_count": 26565,
+      "distribution": {
+        "min": 50.86293738611097,
+        "q25": 60.249630644637406,
+        "median": 62.70432429773416,
+        "q75": 64.95551743966129,
+        "max": 75.16281533771316
+      },
+      "coefficient_of_variation": 0.05405064587247849,
+      "zero_distance_pair_fraction": 0.0,
+      "nearest_neighbor_distribution": {
+        "min": 50.86293738611097,
+        "q25": 54.32920189385585,
+        "median": 56.17571799192354,
+        "q75": 57.939851896232085,
+        "max": 65.31047102366477
+      },
+      "median_nearest_to_median_pairwise_ratio": 0.8958826782852912
+    }
+  },
+  "diagnostics.neighborhoods": {
+    "stage": "before execution",
+    "source": "evidence/diagnostics.json#/neighborhoods",
+    "value": [
+      {
+        "k": 5,
+        "status": "complete",
+        "components": 1,
+        "largest_component_fraction": 1.0,
+        "smallest_component_size": 231,
+        "boundary_distance_distribution": {
+          "min": 52.030339990795504,
+          "q25": 55.79956027987663,
+          "median": 57.23728953058541,
+          "q75": 59.061043850537224,
+          "max": 66.08070848870956
+        },
+        "rows_with_boundary_distance_ties": 0,
+        "graph": "undirected union kNN; self excluded; ties resolved by sampled row order"
+      },
+      {
+        "k": 15,
+        "status": "complete",
+        "components": 1,
+        "largest_component_fraction": 1.0,
+        "smallest_component_size": 231,
+        "boundary_distance_distribution": {
+          "min": 53.23010938326062,
+          "q25": 56.84825901174882,
+          "median": 58.35344406530067,
+          "q75": 59.97375162500076,
+          "max": 67.0271113913483
+        },
+        "rows_with_boundary_distance_ties": 0,
+        "graph": "undirected union kNN; self excluded; ties resolved by sampled row order"
+      },
+      {
+        "k": 30,
+        "status": "complete",
+        "components": 1,
+        "largest_component_fraction": 1.0,
+        "smallest_component_size": 231,
+        "boundary_distance_distribution": {
+          "min": 53.888709048616924,
+          "q25": 57.706144771146086,
+          "median": 59.308661811760906,
+          "q75": 60.723045326234406,
+          "max": 67.48219017528974
+        },
+        "rows_with_boundary_distance_ties": 0,
+        "graph": "undirected union kNN; self excluded; ties resolved by sampled row order"
+      }
+    ]
+  },
+  "diagnostics.source_sha256": {
+    "stage": "before execution",
+    "source": "evidence/diagnostics.json#/source_sha256",
+    "value": "e967fae1a2e14f4118f43306db39335025798eecc4cd199c4a57c741f4e0696e"
+  },
+  "selection_evidence.n_observations": {
+    "stage": "before execution",
+    "source": "evidence/selection_evidence.json#/n_observations",
+    "value": 2700
+  },
+  "selection_evidence.n_features": {
+    "stage": "before execution",
+    "source": "evidence/selection_evidence.json#/n_features",
+    "value": 16634
+  },
+  "selection_evidence.storage": {
+    "stage": "before execution",
+    "source": "evidence/selection_evidence.json#/storage",
+    "value": "sparse_csr"
+  },
+  "selection_evidence.numeric_zero_fraction": {
+    "stage": "before execution",
+    "source": "evidence/selection_evidence.json#/numeric_zero_fraction",
+    "value": 0.9490805534402985
+  },
+  "selection_evidence.constant_feature_count": {
+    "stage": "before execution",
+    "source": "evidence/selection_evidence.json#/constant_feature_count",
+    "value": 0
+  },
+  "selection_evidence.dimensions": {
+    "stage": "before execution",
+    "source": "evidence/selection_evidence.json#/dimensions",
+    "value": 2
+  },
+  "selection_evidence.random_state": {
+    "stage": "before execution",
+    "source": "evidence/selection_evidence.json#/random_state",
+    "value": 0
+  },
+  "selection_evidence.array_sizes_bytes": {
+    "stage": "before execution",
+    "source": "evidence/selection_evidence.json#/array_sizes_bytes",
+    "value": {
+      "dense": 359294400,
+      "pairwise": 58320000
+    }
+  },
+  "selection_evidence.eligibility": {
+    "stage": "before execution",
+    "source": "evidence/selection_evidence.json#/eligibility",
+    "value": {
+      "pca": {
+        "eligible": true,
+        "reasons": []
+      },
+      "mds": {
+        "eligible": true,
+        "reasons": []
+      },
+      "isomap": {
+        "eligible": true,
+        "reasons": []
+      },
+      "lle": {
+        "eligible": false,
+        "reasons": [
+          "Sparse LLE is outside the current execution contract; no implicit densification."
+        ]
+      },
+      "kernel_pca": {
+        "eligible": true,
+        "reasons": []
+      },
+      "laplacian_eigenmaps": {
+        "eligible": true,
+        "reasons": []
+      },
+      "diffusion_maps": {
+        "eligible": true,
+        "reasons": []
+      },
+      "tsne": {
+        "eligible": true,
+        "reasons": []
+      },
+      "umap": {
+        "eligible": true,
+        "reasons": []
+      }
+    }
+  },
+  "selection_evidence.available_methods": {
+    "stage": "before execution",
+    "source": "evidence/selection_evidence.json#/available_methods",
+    "value": [
+      "pca",
+      "mds",
+      "isomap",
+      "lle",
+      "kernel_pca",
+      "laplacian_eigenmaps",
+      "diffusion_maps",
+      "tsne",
+      "umap"
+    ]
+  },
+  "selection_evidence.resource_limits": {
+    "stage": "before execution",
+    "source": "evidence/selection_evidence.json#/resource_limits",
+    "value": {
+      "max_working_bytes": 1000000000,
+      "max_manifold_observations": 5000
+    }
+  },
+  "selection_evidence.diagnostics": {
+    "stage": "before execution",
+    "source": "evidence/selection_evidence.json#/diagnostics",
+    "value": {
+      "schema_version": "1.0",
+      "status": "complete",
+      "input_shape": [
+        2700,
+        16634
+      ],
+      "config": {
+        "max_samples": 512,
+        "max_working_bytes": 128000000,
+        "seed": 0,
+        "neighbors": [
+          5,
+          15,
+          30
+        ]
+      },
+      "metric": "euclidean",
+      "limitations": [
+        "These diagnostics do not prove linearity, manifold structure or an optimal method.",
+        "A sampled graph does not establish full-data connectivity or the same best neighbor count.",
+        "Connectivity at large k can result from inappropriate bridges; it is not a quality score.",
+        "Duplicate and unusual-distance observations are measured, never automatically removed.",
+        "Feature variance is not a covariance spectrum or PCA explained variance.",
+        "Memory screening excludes loading the input and is not a hard process RAM cap."
+      ],
+      "sample_size": 231,
+      "sampled": true,
+      "estimated_working_bytes": 127438208,
+      "scope": "sample_only",
+      "sample_materialized_dense": true,
+      "duplicates": {
+        "extra_identical_rows": 0,
+        "groups_with_duplicates": 0,
+        "rows_in_duplicate_groups": 0,
+        "definition": "Exact equality of postprocessed sampled rows, not biological identity."
+      },
+      "feature_variance": {
+        "status": "complete",
+        "ddof": 0,
+        "distribution": {
+          "min": 0.0,
+          "q25": 0.0,
+          "median": 0.03198492934446307,
+          "q75": 0.12312827043084347,
+          "max": 3.9245061403734764
+        },
+        "zero_variance_features": 4818,
+        "largest_feature_share": 0.0020068261467666238,
+        "top_five_feature_share": 0.008396729315873886
+      },
+      "distances": {
+        "status": "complete",
+        "pair_count": 26565,
+        "distribution": {
+          "min": 50.86293738611097,
+          "q25": 60.249630644637406,
+          "median": 62.70432429773416,
+          "q75": 64.95551743966129,
+          "max": 75.16281533771316
+        },
+        "coefficient_of_variation": 0.05405064587247849,
+        "zero_distance_pair_fraction": 0.0,
+        "nearest_neighbor_distribution": {
+          "min": 50.86293738611097,
+          "q25": 54.32920189385585,
+          "median": 56.17571799192354,
+          "q75": 57.939851896232085,
+          "max": 65.31047102366477
+        },
+        "median_nearest_to_median_pairwise_ratio": 0.8958826782852912
+      },
+      "neighborhoods": [
+        {
+          "k": 5,
+          "status": "complete",
+          "components": 1,
+          "largest_component_fraction": 1.0,
+          "smallest_component_size": 231,
+          "boundary_distance_distribution": {
+            "min": 52.030339990795504,
+            "q25": 55.79956027987663,
+            "median": 57.23728953058541,
+            "q75": 59.061043850537224,
+            "max": 66.08070848870956
+          },
+          "rows_with_boundary_distance_ties": 0,
+          "graph": "undirected union kNN; self excluded; ties resolved by sampled row order"
+        },
+        {
+          "k": 15,
+          "status": "complete",
+          "components": 1,
+          "largest_component_fraction": 1.0,
+          "smallest_component_size": 231,
+          "boundary_distance_distribution": {
+            "min": 53.23010938326062,
+            "q25": 56.84825901174882,
+            "median": 58.35344406530067,
+            "q75": 59.97375162500076,
+            "max": 67.0271113913483
+          },
+          "rows_with_boundary_distance_ties": 0,
+          "graph": "undirected union kNN; self excluded; ties resolved by sampled row order"
+        },
+        {
+          "k": 30,
+          "status": "complete",
+          "components": 1,
+          "largest_component_fraction": 1.0,
+          "smallest_component_size": 231,
+          "boundary_distance_distribution": {
+            "min": 53.888709048616924,
+            "q25": 57.706144771146086,
+            "median": 59.308661811760906,
+            "q75": 60.723045326234406,
+            "max": 67.48219017528974
+          },
+          "rows_with_boundary_distance_ties": 0,
+          "graph": "undirected union kNN; self excluded; ties resolved by sampled row order"
+        }
+      ]
+    }
+  },
+  "selection_evidence.preprocessing": {
+    "stage": "before execution",
+    "source": "evidence/selection_evidence.json#/preprocessing",
+    "value": {
+      "reason": "User context confirms raw nonnegative integer UMI counts in cells-by-genes orientation. Normalize each cell to a total of 10000 to account for differing count totals, then apply log1p to compress the count range. Normalization must reject negative or noninteger values and zero-total rows; row totals are not established by this profile, so validate before transforming and do not silently drop cells. Remove constant features because 16104 are reported and they provide no variation across cells. Use automatic constant removal rather than explicit feature drops because feature details are truncated. Keep scaling disabled and do not center to preserve sparse storage. Retain error policies for missing, infinite, and all-missing values. Retain all cells and defer additional cell-quality filtering and variable-gene selection. No reduction executes here; the separately configured output dimension remains 2.",
+      "schema_version": "1.0",
+      "drop_features": [],
+      "infinity": "error",
+      "missing": "error",
+      "all_missing": "error",
+      "categorical": "error",
+      "remove_constants": true,
+      "count_data_confirmed": true,
+      "normalize_total": 10000,
+      "log1p": true,
+      "scale": "none",
+      "center": false,
+      "max_categories": 100,
+      "max_output_features": 100000,
+      "max_dense_bytes": 1000000000,
+      "ambiguity_resolutions": []
+    }
+  },
+  "selection_evidence.limitations": {
+    "stage": "before execution",
+    "source": "evidence/selection_evidence.json#/limitations",
+    "value": [
+      "No covariance spectrum or intrinsic dimension has been measured. Check diagnostic status/scope before claiming geometry evidence.",
+      "Eligibility is not proof of sufficient memory, speed or scientific suitability.",
+      "No label values, label counts, source paths or raw observations are sent by this stage."
+    ]
+  },
+  "workflow_config.settings": {
+    "stage": "before execution",
+    "source": "evidence/workflow_config.json#/settings",
+    "value": {
+      "loader": {
+        "split": null,
+        "orientation": null,
+        "label_column": null,
+        "id_column": null
+      },
+      "method_policy": "all_suitable",
+      "dimensions": 2,
+      "dimension_mode": "fixed",
+      "dimension_search": {
+        "max_dimensions": 20,
+        "candidates": [
+          2,
+          3,
+          5,
+          10,
+          20
+        ],
+        "max_fits": 5,
+        "total_seconds": 600,
+        "variance_target": 0.9,
+        "distance_error_target": 0.1,
+        "trustworthiness_target": 0.95,
+        "reconstruction_target": 0.1,
+        "reconstruction_weight": 0.1,
+        "complexity_penalty": 0.01,
+        "min_improvement": 0.005,
+        "plateau_patience": 2,
+        "evaluation_samples": 256,
+        "evaluation_neighbors": 5
+      },
+      "preprocessing_attempts": 2,
+      "selection_attempts": 1,
+      "max_model_calls": 5,
+      "planner_timeout": 180,
+      "resources": {
+        "max_working_bytes": 1000000000,
+        "max_manifold_observations": 5000
+      },
+      "diagnostics": {
+        "max_samples": 512,
+        "max_working_bytes": 128000000,
+        "seed": 0,
+        "neighbors": [
+          5,
+          15,
+          30
+        ]
+      },
+      "execution": {
+        "timeout": 600,
+        "threads": 2,
+        "allow_fallback": true
+      },
+      "evaluation": {
+        "max_samples": 512,
+        "max_working_bytes": 128000000,
+        "neighbors": 5,
+        "seed": 0,
+        "max_plot_samples": 10000,
+        "max_categories": 20,
+        "threads": 2
+      },
+      "report": {
+        "name": "generated_report_2",
+        "mode": "codex",
+        "timeout": 300,
+        "color_column": null
+      }
+    }
+  },
+  "workflow_config.origins": {
+    "stage": "before execution",
+    "source": "evidence/workflow_config.json#/origins",
+    "value": {
+      "loader.split": {
+        "value": null,
+        "origin": "application default"
+      },
+      "loader.orientation": {
+        "value": null,
+        "origin": "application default"
+      },
+      "loader.label_column": {
+        "value": null,
+        "origin": "application default"
+      },
+      "loader.id_column": {
+        "value": null,
+        "origin": "application default"
+      },
+      "method_policy": {
+        "value": "all_suitable",
+        "origin": "application default"
+      },
+      "dimensions": {
+        "value": 2,
+        "origin": "application default"
+      },
+      "dimension_mode": {
+        "value": "fixed",
+        "origin": "application default"
+      },
+      "dimension_search.max_dimensions": {
+        "value": 20,
+        "origin": "application default"
+      },
+      "dimension_search.candidates": {
+        "value": [
+          2,
+          3,
+          5,
+          10,
+          20
+        ],
+        "origin": "application default"
+      },
+      "dimension_search.max_fits": {
+        "value": 5,
+        "origin": "application default"
+      },
+      "dimension_search.total_seconds": {
+        "value": 600,
+        "origin": "application default"
+      },
+      "dimension_search.variance_target": {
+        "value": 0.9,
+        "origin": "application default"
+      },
+      "dimension_search.distance_error_target": {
+        "value": 0.1,
+        "origin": "application default"
+      },
+      "dimension_search.trustworthiness_target": {
+        "value": 0.95,
+        "origin": "application default"
+      },
+      "dimension_search.reconstruction_target": {
+        "value": 0.1,
+        "origin": "application default"
+      },
+      "dimension_search.reconstruction_weight": {
+        "value": 0.1,
+        "origin": "application default"
+      },
+      "dimension_search.complexity_penalty": {
+        "value": 0.01,
+        "origin": "application default"
+      },
+      "dimension_search.min_improvement": {
+        "value": 0.005,
+        "origin": "application default"
+      },
+      "dimension_search.plateau_patience": {
+        "value": 2,
+        "origin": "application default"
+      },
+      "dimension_search.evaluation_samples": {
+        "value": 256,
+        "origin": "application default"
+      },
+      "dimension_search.evaluation_neighbors": {
+        "value": 5,
+        "origin": "application default"
+      },
+      "preprocessing_attempts": {
+        "value": 2,
+        "origin": "application default"
+      },
+      "selection_attempts": {
+        "value": 1,
+        "origin": "application default"
+      },
+      "max_model_calls": {
+        "value": 5,
+        "origin": "application default"
+      },
+      "planner_timeout": {
+        "value": 180,
+        "origin": "application default"
+      },
+      "resources.max_working_bytes": {
+        "value": 1000000000,
+        "origin": "application default"
+      },
+      "resources.max_manifold_observations": {
+        "value": 5000,
+        "origin": "application default"
+      },
+      "diagnostics.max_samples": {
+        "value": 512,
+        "origin": "application default"
+      },
+      "diagnostics.max_working_bytes": {
+        "value": 128000000,
+        "origin": "application default"
+      },
+      "diagnostics.seed": {
+        "value": 0,
+        "origin": "application default"
+      },
+      "diagnostics.neighbors": {
+        "value": [
+          5,
+          15,
+          30
+        ],
+        "origin": "application default"
+      },
+      "execution.timeout": {
+        "value": 600,
+        "origin": "application default"
+      },
+      "execution.threads": {
+        "value": 2,
+        "origin": "application default"
+      },
+      "execution.allow_fallback": {
+        "value": true,
+        "origin": "application default"
+      },
+      "evaluation.max_samples": {
+        "value": 512,
+        "origin": "application default"
+      },
+      "evaluation.max_working_bytes": {
+        "value": 128000000,
+        "origin": "application default"
+      },
+      "evaluation.neighbors": {
+        "value": 5,
+        "origin": "application default"
+      },
+      "evaluation.seed": {
+        "value": 0,
+        "origin": "application default"
+      },
+      "evaluation.max_plot_samples": {
+        "value": 10000,
+        "origin": "application default"
+      },
+      "evaluation.max_categories": {
+        "value": 20,
+        "origin": "application default"
+      },
+      "evaluation.threads": {
+        "value": 2,
+        "origin": "application default"
+      },
+      "report.name": {
+        "value": "generated_report_2",
+        "origin": "caller configuration"
+      },
+      "report.mode": {
+        "value": "codex",
+        "origin": "application default"
+      },
+      "report.timeout": {
+        "value": 300,
+        "origin": "caller configuration"
+      },
+      "report.color_column": {
+        "value": null,
+        "origin": "application default"
+      }
+    }
+  },
+  "workflow_config.context": {
+    "stage": "before execution",
+    "source": "evidence/workflow_config.json#/context",
+    "value": "Raw nonnegative integer UMI counts; cells by genes. Additional cell-quality filtering and variable-gene selection are deferred. Retain all cells; no cell-type labels or new train/test split."
+  },
+  "workflow_config.context_origin": {
+    "stage": "before execution",
+    "source": "evidence/workflow_config.json#/context_origin",
+    "value": "caller supplied"
+  },
+  "workflow_config.scope": {
+    "stage": "before execution",
+    "source": "evidence/workflow_config.json#/scope",
+    "value": "Configuration provenance; scientific choices remain in stage plans."
+  }
+}

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dimred-agent"
+version = "0.1.0"
+description = "Dataset ingestion and profiling for an automated dimension-reduction agent"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "pandas>=2.1,<3", "scipy>=1.11,<2", "anndata>=0.10,<0.13", "scikit-learn==1.9.1", "threadpoolctl>=3.5,<4", "matplotlib>=3.9,<4", "umap-learn==0.5.12"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+dimred-profile = "dimred_agent.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["dimred_agent*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,268 @@
+{
+  "settings": {
+    "loader": {
+      "split": null,
+      "orientation": null,
+      "label_column": null,
+      "id_column": null
+    },
+    "method_policy": "all_suitable",
+    "dimensions": 2,
+    "dimension_mode": "fixed",
+    "dimension_search": {
+      "max_dimensions": 20,
+      "candidates": [
+        2,
+        3,
+        5,
+        10,
+        20
+      ],
+      "max_fits": 5,
+      "total_seconds": 600,
+      "variance_target": 0.9,
+      "distance_error_target": 0.1,
+      "trustworthiness_target": 0.95,
+      "reconstruction_target": 0.1,
+      "reconstruction_weight": 0.1,
+      "complexity_penalty": 0.01,
+      "min_improvement": 0.005,
+      "plateau_patience": 2,
+      "evaluation_samples": 256,
+      "evaluation_neighbors": 5
+    },
+    "preprocessing_attempts": 2,
+    "selection_attempts": 1,
+    "max_model_calls": 5,
+    "planner_timeout": 180,
+    "resources": {
+      "max_working_bytes": 1000000000,
+      "max_manifold_observations": 5000
+    },
+    "diagnostics": {
+      "max_samples": 512,
+      "max_working_bytes": 128000000,
+      "seed": 0,
+      "neighbors": [
+        5,
+        15,
+        30
+      ]
+    },
+    "execution": {
+      "timeout": 600,
+      "threads": 2,
+      "allow_fallback": true
+    },
+    "evaluation": {
+      "max_samples": 512,
+      "max_working_bytes": 128000000,
+      "neighbors": 5,
+      "seed": 0,
+      "max_plot_samples": 10000,
+      "max_categories": 20,
+      "threads": 2
+    },
+    "report": {
+      "name": "generated_report_2",
+      "mode": "codex",
+      "timeout": 300,
+      "color_column": null
+    }
+  },
+  "origins": {
+    "loader.split": {
+      "value": null,
+      "origin": "application default"
+    },
+    "loader.orientation": {
+      "value": null,
+      "origin": "application default"
+    },
+    "loader.label_column": {
+      "value": null,
+      "origin": "application default"
+    },
+    "loader.id_column": {
+      "value": null,
+      "origin": "application default"
+    },
+    "method_policy": {
+      "value": "all_suitable",
+      "origin": "application default"
+    },
+    "dimensions": {
+      "value": 2,
+      "origin": "application default"
+    },
+    "dimension_mode": {
+      "value": "fixed",
+      "origin": "application default"
+    },
+    "dimension_search.max_dimensions": {
+      "value": 20,
+      "origin": "application default"
+    },
+    "dimension_search.candidates": {
+      "value": [
+        2,
+        3,
+        5,
+        10,
+        20
+      ],
+      "origin": "application default"
+    },
+    "dimension_search.max_fits": {
+      "value": 5,
+      "origin": "application default"
+    },
+    "dimension_search.total_seconds": {
+      "value": 600,
+      "origin": "application default"
+    },
+    "dimension_search.variance_target": {
+      "value": 0.9,
+      "origin": "application default"
+    },
+    "dimension_search.distance_error_target": {
+      "value": 0.1,
+      "origin": "application default"
+    },
+    "dimension_search.trustworthiness_target": {
+      "value": 0.95,
+      "origin": "application default"
+    },
+    "dimension_search.reconstruction_target": {
+      "value": 0.1,
+      "origin": "application default"
+    },
+    "dimension_search.reconstruction_weight": {
+      "value": 0.1,
+      "origin": "application default"
+    },
+    "dimension_search.complexity_penalty": {
+      "value": 0.01,
+      "origin": "application default"
+    },
+    "dimension_search.min_improvement": {
+      "value": 0.005,
+      "origin": "application default"
+    },
+    "dimension_search.plateau_patience": {
+      "value": 2,
+      "origin": "application default"
+    },
+    "dimension_search.evaluation_samples": {
+      "value": 256,
+      "origin": "application default"
+    },
+    "dimension_search.evaluation_neighbors": {
+      "value": 5,
+      "origin": "application default"
+    },
+    "preprocessing_attempts": {
+      "value": 2,
+      "origin": "application default"
+    },
+    "selection_attempts": {
+      "value": 1,
+      "origin": "application default"
+    },
+    "max_model_calls": {
+      "value": 5,
+      "origin": "application default"
+    },
+    "planner_timeout": {
+      "value": 180,
+      "origin": "application default"
+    },
+    "resources.max_working_bytes": {
+      "value": 1000000000,
+      "origin": "application default"
+    },
+    "resources.max_manifold_observations": {
+      "value": 5000,
+      "origin": "application default"
+    },
+    "diagnostics.max_samples": {
+      "value": 512,
+      "origin": "application default"
+    },
+    "diagnostics.max_working_bytes": {
+      "value": 128000000,
+      "origin": "application default"
+    },
+    "diagnostics.seed": {
+      "value": 0,
+      "origin": "application default"
+    },
+    "diagnostics.neighbors": {
+      "value": [
+        5,
+        15,
+        30
+      ],
+      "origin": "application default"
+    },
+    "execution.timeout": {
+      "value": 600,
+      "origin": "application default"
+    },
+    "execution.threads": {
+      "value": 2,
+      "origin": "application default"
+    },
+    "execution.allow_fallback": {
+      "value": true,
+      "origin": "application default"
+    },
+    "evaluation.max_samples": {
+      "value": 512,
+      "origin": "application default"
+    },
+    "evaluation.max_working_bytes": {
+      "value": 128000000,
+      "origin": "application default"
+    },
+    "evaluation.neighbors": {
+      "value": 5,
+      "origin": "application default"
+    },
+    "evaluation.seed": {
+      "value": 0,
+      "origin": "application default"
+    },
+    "evaluation.max_plot_samples": {
+      "value": 10000,
+      "origin": "application default"
+    },
+    "evaluation.max_categories": {
+      "value": 20,
+      "origin": "application default"
+    },
+    "evaluation.threads": {
+      "value": 2,
+      "origin": "application default"
+    },
+    "report.name": {
+      "value": "generated_report_2",
+      "origin": "caller configuration"
+    },
+    "report.mode": {
+      "value": "codex",
+      "origin": "application default"
+    },
+    "report.timeout": {
+      "value": 300,
+      "origin": "caller configuration"
+    },
+    "report.color_column": {
+      "value": null,
+      "origin": "application default"
+    }
+  },
+  "context": "Raw nonnegative integer UMI counts; cells by genes. Additional cell-quality filtering and variable-gene selection are deferred. Retain all cells; no cell-type labels or new train/test split.",
+  "context_origin": "caller supplied",
+  "scope": "Configuration provenance; scientific choices remain in stage plans."
+}

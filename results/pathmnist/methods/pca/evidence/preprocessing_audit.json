@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "scope": "full-dataset exploratory preprocessing; not predictive train/test fitting",
+  "plan": {
+    "reason": "Keep the original RGB intensities without scaling or centering to preserve their common 0\u2013255 units and relative variation. The user confirms these are not counts, so count normalization and log1p are unnecessary. No missing, infinite, all-missing, or constant features are reported, so retain error policies and omit imputation, feature drops, and constant removal. All features are numeric; labels remain metadata. Retain all 10,004 observations without a new split. Output dimensionality is configured separately; this plan performs no dimensionality reduction. All resource limits remain at their defaults.",
+    "schema_version": "1.0",
+    "drop_features": [],
+    "infinity": "error",
+    "missing": "error",
+    "all_missing": "error",
+    "categorical": "error",
+    "remove_constants": false,
+    "count_data_confirmed": false,
+    "normalize_total": null,
+    "log1p": false,
+    "scale": "none",
+    "center": false,
+    "max_categories": 100,
+    "max_output_features": 100000,
+    "max_dense_bytes": 1000000000,
+    "ambiguity_resolutions": []
+  },
+  "input_shape": [
+    10004,
+    2352
+  ],
+  "output_shape": [
+    10004,
+    2352
+  ],
+  "source_provenance": {
+    "format": "medmnist_npz",
+    "split": "val",
+    "image_shape": [
+      28,
+      28,
+      3
+    ],
+    "orientation_evidence": "MedMNIST array convention",
+    "sources": [
+      {
+        "path": "/Users/derekyao/Downloads/774_Dim_Red_Project/774_Dim_Red_Project/data/pathmnist.npz",
+        "sha256": "81823f52dc622e69db2db4c72f8e8e617938dd6864d3c1f23d4e49724a28ea72",
+        "bytes": 205615438
+      }
+    ]
+  },
+  "input_assumptions": [
+    "Flattened image axes in C order; pixel values are not scaled and spatial layout is recorded."
+  ],
+  "input_ambiguities": [],
+  "imputation": [],
+  "events": [],
+  "row_order_preserved": true,
+  "labels_used_for_transformations": false
+}

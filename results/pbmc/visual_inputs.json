@@ -1,0 +1,90 @@
+[
+  {
+    "image_id": "pca.visual",
+    "image_index": 1,
+    "method_branch": "pca",
+    "fitted_method": "pca",
+    "file": "visual_inputs/pca.png",
+    "sha256": "4c8c806eee042a77576ecb59ece4dc9e0a949ecdd7fd170785b163e4eb187f43",
+    "pixel_size": [
+      1440,
+      960
+    ],
+    "embedding_sha256": "4c9d64115c0556a5d45d1bde8bad4dd63bacb7db0a3b0c8ad7797253e4dae809",
+    "plot": {
+      "sample_size": 2700,
+      "representation_dimensions": 2,
+      "view_dimensions": 2,
+      "color_column": null,
+      "color_status": "uncolored",
+      "description": "First coordinates of the saved embedding; no new 2D fit."
+    },
+    "metrics_ref": "pca.embedding"
+  },
+  {
+    "image_id": "mds.visual",
+    "image_index": 2,
+    "method_branch": "mds",
+    "fitted_method": "mds",
+    "file": "visual_inputs/mds.png",
+    "sha256": "d0e883649fc5c5c826503c536d9a73db51bc10ae68c0b3db800fbceece30c885",
+    "pixel_size": [
+      1440,
+      960
+    ],
+    "embedding_sha256": "ef672c972302e0d5d070990ef4da36ad95825f9fb11176ce334d290ce95d91f6",
+    "plot": {
+      "sample_size": 2700,
+      "representation_dimensions": 2,
+      "view_dimensions": 2,
+      "color_column": null,
+      "color_status": "uncolored",
+      "description": "First coordinates of the saved embedding; no new 2D fit."
+    },
+    "metrics_ref": "mds.embedding"
+  },
+  {
+    "image_id": "tsne.visual",
+    "image_index": 3,
+    "method_branch": "tsne",
+    "fitted_method": "tsne",
+    "file": "visual_inputs/tsne.png",
+    "sha256": "9864dd773c3dead9dd07ec8b37924494344524ca414c114e15e6d6d440c21ace",
+    "pixel_size": [
+      1440,
+      960
+    ],
+    "embedding_sha256": "b3874f16fb75953d0bdbc51a6f0557b5347c70b891c9d5116282062c86afe914",
+    "plot": {
+      "sample_size": 2700,
+      "representation_dimensions": 2,
+      "view_dimensions": 2,
+      "color_column": null,
+      "color_status": "uncolored",
+      "description": "First coordinates of the saved embedding; no new 2D fit."
+    },
+    "metrics_ref": "tsne.embedding"
+  },
+  {
+    "image_id": "umap.visual",
+    "image_index": 4,
+    "method_branch": "umap",
+    "fitted_method": "umap",
+    "file": "visual_inputs/umap.png",
+    "sha256": "1cc1736c08e8f054712a9d20ef0af5f8d7454774d85e65f6c14eadc20a1fa2c7",
+    "pixel_size": [
+      1440,
+      960
+    ],
+    "embedding_sha256": "214d6ff17ba5c73f04c271940dd7ce228785b3615270054cebd0cb9c9d877e7d",
+    "plot": {
+      "sample_size": 2700,
+      "representation_dimensions": 2,
+      "view_dimensions": 2,
+      "color_column": null,
+      "color_status": "uncolored",
+      "description": "First coordinates of the saved embedding; no new 2D fit."
+    },
+    "metrics_ref": "umap.embedding"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "image_id": "pca.visual",
+    "image_index": 1,
+    "method_branch": "pca",
+    "fitted_method": "pca",
+    "file": "visual_inputs/pca.png",
+    "sha256": "a2110629b105640cf436f8cf91eb1243ce77f442c721bc81414132caf03f59b9",
+    "pixel_size": [
+      1440,
+      960
+    ],
+    "embedding_sha256": "714320c7ba0fa64005677c5ca6a24a7b6f99bf0ae44c0deae8f15747795ca7ea",
+    "plot": {
+      "sample_size": 10000,
+      "representation_dimensions": 2,
+      "view_dimensions": 2,
+      "color_column": "label_0",
+      "color_status": "categorical",
+      "description": "First coordinates of the saved embedding; no new 2D fit."
+    },
+    "metrics_ref": "pca.embedding"
+  }
+]
