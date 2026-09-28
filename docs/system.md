@@ -48,7 +48,11 @@ trigger replacement.
 ## Resource controls and recovery
 
 Defaults allow 1,000,000,000 estimated working-array bytes and 5,000 observations
-for non-PCA methods. These are conservative screens, not hard process RAM limits.
+for non-PCA methods. These conservative defaults keep local CPU and memory use
+manageable and leave capacity for the operating system and other applications.
+They are operational safeguards, not benchmarked hardware-capacity thresholds
+or hard process RAM limits. Users can raise them through configuration to admit
+additional suitable methods, without a guarantee of completion or better results.
 For dense input with n observations and p features, the screen uses D=8np and
 P=8n² bytes: all methods require 3D within the budget, MDS/Isomap require 6P+D,
 and Kernel PCA/Laplacian Eigenmaps/Diffusion Maps/t-SNE/UMAP require 8P+D.

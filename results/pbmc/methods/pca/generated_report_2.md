@@ -2,11 +2,11 @@
 
 Generation mode: evidence_only.
 
-This is an automated analysis report, not the manually prepared course report.
+This is a method-level evidence appendix to the [combined dataset report](../../generated_report_2.md).
 
 Evidence links point to bundled JSON records. JSON fragments identify fields. Recorded reasons are planner explanations, not independent proof. Citation validation checks references and fingerprints, not scientific truth.
 
-Verification scope: before requesting or replaying the narrative, Python rehashed the processed matrix and saved embedding, checked selection/execution/evaluation linkage and preprocessing consistency, and rejected mismatches. The narrative model itself did not inspect files, view plot images or rerun computations. Statements in the narrative about lack of independent verification apply to that model review, not to these automated file-integrity checks.
+Verification scope: Python checked preprocessing, execution and evaluation linkage and artifact hashes. This appendix is a deterministic rendering of saved evidence; the combined dataset report contains the model-generated narrative and direct plot interpretation.
 
 ![Saved embedding visualization](embedding.png)
 
@@ -25,7 +25,7 @@ This method belongs to a jointly selected set. Other-method assessments below ma
 
 ## Narrative status
 
-Evidence-only rendering: no new AI synthesis. Do not label this an AI-generated narrative.
+This appendix renders recorded settings and results without a separate model request.
 
 ## Verbatim decision-time records
 
@@ -1384,16 +1384,16 @@ These results assess the output; they were not known when the original method wa
 
 ## Evidence gaps and limits of attribution
 
-- Historical preprocessing reasons are aggregate prose, not per-operation evidence mappings.
+- Recorded preprocessing reasons are aggregate prose, not per-operation evidence mappings.
 - A recorded setting does not establish why that exact numerical value is best; many settings are application policies or library defaults.
-- Historical configuration does not always identify caller override versus default. No user instruction is inferred from a matching default.
+- The bundled workflow configuration records caller overrides and defaults. Estimator settings outside the selected plan do not necessarily have individual tuning rationales.
 - No exhaustive method comparison or scientific-optimality proof was performed.
 - Model synthesis can be mistaken despite valid citations. Full records allow human review.
-- The report model receives records and metrics, not the plot image; it does not perform visual assessment.
+- This evidence appendix contains no independent visual assessment. The combined report interprets the supplied plot alongside its numerical evidence.
 
 ## Source bundle and reproducibility
 
-See [manifest](manifest.json), [evidence catalog](evidence_catalog.json), [decision ledger](decision_ledger.json) and [generation status](report_generation.json). Original JSON files are copied without modifying their contents. They may contain feature names or local source paths; review before public sharing.
+See [manifest](manifest.json), [evidence catalog](evidence_catalog.json), [decision ledger](decision_ledger.json) and [generation status](report_generation.json). Original JSON files are copied without modifying their contents. Local source paths identify the analyzed files; reading this appendix does not require those paths to exist.
 
 - [input_profile](evidence/input_profile.json)
 - [preprocessing](evidence/preprocessing.json)

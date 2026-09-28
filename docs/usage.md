@@ -23,7 +23,8 @@ omitted fields use application defaults. For example, save this as `settings.jso
 
 CLI overrides include `--split`, `--orientation`, `--label-column`, `--id-column`,
 `--dimensions`, `--dimension-mode`, `--method-policy` and `--report-name`.
-The exact default configuration is defined by `defaults()` in
+The example uses a 300-second report timeout; the application default is 180
+seconds. The exact default configuration is defined by `defaults()` in
 `dimred_agent/pipeline.py`. There are no dataset-specific hardcoded method plans.
 
 For optional local dimension search, use `--dimension-mode auto`. Default

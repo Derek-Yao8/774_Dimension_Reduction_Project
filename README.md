@@ -74,5 +74,4 @@ evaluation, image reporting, bounded failures, checkpoints and numerical replay.
 Controlled planner responses test software behavior; they are not independent
 evidence of scientific judgment quality. See the limitations in the system guide.
 
-The separate manually prepared `report.pdf` must be supplied before final Canvas
-submission. It is not replaced by either generated dataset report.
+The separate manually prepared course report is not included in this repository.
