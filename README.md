@@ -7,10 +7,11 @@ computationally feasible method, evaluates successful embeddings, and writes one
 combined report. Methods are not ranked and no winner is selected. Output is
 fixed at two dimensions by default; automatic dimension selection is optional.
 
-## Installation
+## Installation on macOS
 
 Use Python 3.11 or newer; the supplied dependency snapshot was tested with Python
-3.13.2 on macOS arm64. Create an environment on the machine where you will run it:
+3.13.2 on macOS arm64 (Apple Silicon). In Terminal, open the repository folder
+and create a local environment:
 
 ```sh
 python3 -m venv .venv
@@ -19,8 +20,8 @@ python -m pip install -r requirements-macos-tested.txt
 python -m pip install -e .
 ```
 
-On Windows, activate with `.venv\Scripts\Activate.ps1` in PowerShell. Platform
-dependency availability can differ. `pyproject.toml` defines the supported
+Dependency availability can differ across Python versions and architectures.
+`pyproject.toml` defines the supported
 dependency ranges; use `python -m pip install -e ".[dev]"` for a compatible
 installation when the exact snapshot is unavailable.
 
